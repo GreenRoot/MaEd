@@ -152,3 +152,6 @@ package-lock.json
 
 #main.css
 /css/main.css
+
+#build
+build

@@ -3,8 +3,18 @@ html(lang="ru-RU")
 	head
 		title MaEd
 		link(rel="stylesheet", href="static/css/main.css")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 	body
-		h1 Go go go MaEd
+		header.container
+			.header
+				img.header__logo(src="static/img/logo.png", alt="Логотип")
+				.headerInfoWr
+					.headerInfo
+						.headerInfo__date 29.94 – 25.07
+						.headerInfo__time понедельник и четверг 18:00
+					.headerInfo
+						.headerInfo__format Формат
+						.headerInfo__formatDescr Вебинары, Skype, Facebook
 
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")

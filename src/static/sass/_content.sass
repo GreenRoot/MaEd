@@ -14,16 +14,20 @@ body
 	&InfoWr
 		display: flex
 		justify-content: space-around
-		margin: 0 0 50px 0
+		margin: 0 15px 50px 15px
+		@media (min-width: 425px)
+			margin: 0 0 50px 0
 	&Info
 		width: 50%
 		font-family: 'Museo Sans Cyrl', sans-serif
 		font-size: 14px
 		&:first-child
-			margin: 0 30px 0 0
+			margin: 0 20px 0 0
+			@media (min-width: 425px)
+				margin: 0 30px 0 0
 		&__date
 			position: relative
-			letter-spacing: 4px
+			letter-spacing: 3px
 			text-transform: uppercase
 			margin: 0 0 6px 0
 			&:before
@@ -36,6 +40,8 @@ body
 				background-image: url(../img/whatch.png)
 				background-position: 0 0
 				background-repeat: no-repeat
+			@media (min-width: 425px)
+				letter-spacing: 4px
 		&__time
 			line-height: 20px
 			letter-spacing: 0.02em
@@ -66,20 +72,29 @@ body
 		font-size: 64px
 		line-height: 66px
 		letter-spacing: 4px
-		margin: 0 0 14px 0
+		margin: 0 15px 14px 15px
+		@media (min-width: 425px)
+			margin: 0 0 14px 0
 	&__subtitle
 		font-family: 'Museo Sans Cyrl', sans-serif
-		font-size: 24px
+		font-size: 22px
 		line-height: 40px
 		color: #F03A2B
-		margin: 0 0 40px 0
+		margin: 0 15px 40px 15px
+		@media (min-width: 425px)
+			font-size: 24px
+			margin: 0 0 40px 0
 	&__text
 		font-family: 'Museo Sans Cyrl', sans-serif
-		font-size: 18px
-		line-height: 32px
+		font-size: 16px
+		line-height: 28px
 		letter-spacing: 0.02em
 		color: #8B8B8B
-		margin: 0 0 334px 0
+		margin: 0 15px 334px 15px
+		@media (min-width: 425px)
+			font-size: 18px
+			line-height: 32px
+			margin: 0 0 334px 0
 
 .button
 	position: relative

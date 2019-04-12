@@ -4,7 +4,7 @@ html(lang="ru-RU")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, user-scalable=no")
 		meta(name="theme-color" content="#171717")
-		link(rel="stylesheet", href="static/css/main.css?v.0.0.3")
+		link(rel="stylesheet", href="static/css/main.css?v.0.0.5")
 		title MaEd
 	body
 		// header
@@ -15,19 +15,43 @@ html(lang="ru-RU")
 				.headerInfoWr
 					.headerInfo
 						.headerInfo__date 29.94 – 25.07
-						.headerInfo__time понедельник и четверг 18:00
+						.headerInfo__time понедельник и&nbsp;четверг 18:00
 					.headerInfo
 						.headerInfo__format Формат
 						.headerInfo__formatDescr Вебинары, Skype, Facebook
 		// main
-		.container
+		section.container.main-container
 			.main
-				.main__title Интернет- маркетинг
+				h1.main__title Интернет- маркетинг
 				.main__subtitle Для B2B и сложных рынков
 				.main__text Покажем, как выстроить стратегию и&nbsp;тактику интернет-маркетинга для&nbsp;Вашей компании
 				a.button(href="#") Зарегистрироваться
 		// Andrew
-		.img
+		.header__img
+		section.feature
+			.feature__img
+			.container
+				h2.feature__title Чем этот курс отличается от других?
+				.features
+					.features__block
+						img.features__img(src="static/img/steps.png", alt="Ступеньки")
+						.features__title Системная подача информации
+						.features__text Учим объединять инструменты интернет- маркетинга в систему, где каждый инструмент дополняет другой и нацелен на решение задач бизнеса. Отдельные метрики: конверсии, CTR, открытия писем&nbsp;—&nbsp;не наш приоритет
+					.features__block.features__block-du
+						img.features__img.features__img-du(src="static/img/digital-strategy.png", alt="Стратегия")
+						.features__title Резлуьтат – готовая digital&#8209;стратегия
+						.features__text Урок за уроком вы будете применять различные инструменты и создадите стратегию digital-маркетинга для вашего проекта на 2019 год. Это готовый план действий, который можно внедрить сразу после курса
+					.features__block
+						img.features__img(src="static/img/keyboard.png", alt="Практика")
+						.features__title Практика во&nbsp; время&nbsp;обучения
+						.features__text Вы сегментируете целевую аудиторию, проведете конкурентный анализ, подберете поисковые запросы, составите требования для контекстной рекламы, разработаете стратегию контент-маркетинга, email-маркетинга и т.д.
+
+
+
+
+
+
+
 		// during development
 		.Yeah-I-m-working-on-that Сайт в разработке
 

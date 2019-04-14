@@ -114,8 +114,32 @@ h1, h2, h3
 			color: #8B8B8B
 
 .main
+	@media (min-width: 1024px)
+		position: relative
+		width: 550px
+		// margin: 122px 0 0 0
+		margin: 0 0 0 0
+		&:before
+			position: absolute
+			// top: -220px
+			// left: -230px
+			// font-size: 940px
+			top: -50px
+			left: -10px
+			font-size: 720px
+			content: 'b2b'
+			font-family: SignPainter
+			text-align: center
+			text-transform: uppercase
+			color: #1C1C1C
+			z-index: -1
 	&-container
 		margin-bottom: 451px
+		@media (min-width: 1024px)
+			display: flex
+			justify-content: space-between
+			align-content: center
+			margin-bottom: 70px
 	&__title
 		display: block
 		font-family: 'Bebas Neue', sans-serif
@@ -125,6 +149,10 @@ h1, h2, h3
 		margin: 0 15px 14px 15px
 		@media (min-width: 350px)
 			margin: 0 0 14px 0
+		@media (min-width: 1024px)
+			font-size: 104px
+			line-height: 104px
+			margin: 0 0 17px 0
 	&__subtitle
 		font-family: 'Museo Sans Cyrl', sans-serif
 		font-size: 22px
@@ -134,6 +162,12 @@ h1, h2, h3
 		@media (min-width: 350px)
 			font-size: 24px
 			margin: 0 0 40px 0
+		@media (min-width: 1024px)
+			width: 520px
+			font-size: 38px
+			line-height: 48px
+			margin: 0 0 95px 0
+			letter-spacing: 0.8px
 	&__text
 		font-family: 'Museo Sans Cyrl', sans-serif
 		font-size: 16px
@@ -145,6 +179,18 @@ h1, h2, h3
 			font-size: 18px
 			line-height: 32px
 			margin: 0 0 334px 0
+		@media (min-width: 1024px)
+			width: 430px
+			font-size: 24px
+			line-height: 32px
+			margin: 0 0 50px 0
+	&__img
+		display: none
+		@media (min-width: 1024px)
+			display: block
+			margin: 0 0 0 -100px
+
+
 
 .button
 	position: relative
@@ -173,6 +219,9 @@ h1, h2, h3
 		padding: 30px 0 28px 110px
 		&:before
 			left: 66px
+	@media (min-width: 1024px)
+		display: inline-block
+		padding: 30px 67px 28px 108px
 
 .header__img
 	position: absolute
@@ -187,6 +236,8 @@ h1, h2, h3
 	z-index: -1
 	@media (min-width: 570px)
 		background-size: contain
+	@media (min-width: 1024px)
+		display: none
 
 .feature
 	position: relative

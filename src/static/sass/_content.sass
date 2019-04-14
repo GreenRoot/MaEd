@@ -20,7 +20,6 @@ h1, h2, h3
 		display: flex
 		justify-content: space-between
 		margin: 56px 0 24px 0
-
 	&__logo
 		display: block
 		margin: 0 auto 83px
@@ -56,6 +55,9 @@ h1, h2, h3
 				background-image: url(../img/15stream.png)
 				background-position: 0 0
 				background-repeat: no-repeat
+		@media (min-width: 1440px)
+			width: auto
+
 	&Info
 		width: 50%
 		font-family: 'Museo Sans Cyrl', sans-serif
@@ -66,6 +68,8 @@ h1, h2, h3
 				margin: 0 30px 0 0
 			@media (min-width: 1024px)
 				margin: 0 70px 0 0
+			@media (min-width: 1440px)
+				margin: 0 86px 0 0
 		&__date
 			position: relative
 			letter-spacing: 3px
@@ -86,6 +90,8 @@ h1, h2, h3
 					left: -36px
 			@media (min-width: 350px)
 				letter-spacing: 4px
+			@media (min-width: 1440px)
+				width: 220px
 		&__time
 			line-height: 20px
 			letter-spacing: 0.02em
@@ -114,16 +120,13 @@ h1, h2, h3
 			color: #8B8B8B
 
 .main
+	transition: all 0.2s
 	@media (min-width: 1024px)
 		position: relative
 		width: 550px
-		// margin: 122px 0 0 0
 		margin: 0 0 0 0
 		&:before
 			position: absolute
-			// top: -220px
-			// left: -230px
-			// font-size: 940px
 			top: -50px
 			left: -10px
 			font-size: 720px
@@ -133,6 +136,14 @@ h1, h2, h3
 			text-transform: uppercase
 			color: #1C1C1C
 			z-index: -1
+			@media (min-width: 1440px)
+				top: -53px
+				left: -205px
+				font-size: 1090px
+	@media (min-width: 1440px)
+		margin: 0 0 0 220px
+	@media (min-width: 1800px)
+		margin: 0 0 0 154px
 	&-container
 		margin-bottom: 451px
 		@media (min-width: 1024px)
@@ -167,7 +178,14 @@ h1, h2, h3
 			font-size: 37px
 			line-height: 48px
 			margin: 0 0 95px 0
-			letter-spacing: 0.8px
+		@media (min-width: 1440px)
+			width: 520px
+			font-size: 38px
+			letter-spacing: 1px
+		@media (min-width: 1800px)
+			width: auto
+			letter-spacing: 1.9px
+
 	&__text
 		font-family: 'Museo Sans Cyrl', sans-serif
 		font-size: 16px
@@ -184,12 +202,49 @@ h1, h2, h3
 			font-size: 24px
 			line-height: 32px
 			margin: 0 0 50px 0
+		
 	&__img
 		display: none
+		&:nth-child(3)
+			display: none
 		@media (min-width: 1024px)
 			display: block
 			margin: 0 0 0 -100px
+		@media (min-width: 1440px)
+			margin: 0 0 0 -151px
+			&:nth-child(2)
+				display: none
+			&:nth-child(3)
+				display: block
 
+.marketers
+	display: none
+	@media (min-width: 1440px)
+		display: flex
+		flex-wrap: wrap
+		margin: -127px 0 71px 0
+	&__photos
+		display: flex
+		margin: 0 0 4px 0
+		& img
+			margin: 0 12px 0 0
+			&:nth-child(4)
+				opacity: 0.7
+			&:nth-child(5)
+				opacity: 0.6
+			&:nth-child(6)
+				opacity: 0.5
+			&:nth-child(7)
+				opacity: 0.4
+	&__text
+		font-family: Museo Sans Cyrl
+		font-size: 14px
+		line-height: 24px
+		letter-spacing: 0.02em
+		color: #8B8B8B
+		width: 420px
+		&-yellow
+			color: #fed033
 
 
 .button
@@ -222,6 +277,12 @@ h1, h2, h3
 	@media (min-width: 1024px)
 		display: inline-block
 		padding: 30px 67px 28px 108px
+		&:hover
+			color: #006EC7
+			background-color: #fff
+			border: 2px solid #006EC7
+			padding: 28px 65px 26px 106px
+			transition: 0.4s
 
 .header__img
 	position: absolute

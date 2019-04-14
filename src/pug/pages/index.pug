@@ -8,10 +8,12 @@ html(lang="ru-RU")
 		title MaEd
 	body
 		// header
-		header.container
+		header.container.container-test-600
 			.header
 				a.header__logo(href="/")
-					img(src="static/img/logo.png", alt="Логотип")
+					img(src="static/img/logo.png", alt="Логотип MaEd")
+				a.header__logo-big(href="/")
+					img(src="static/img/logo-big.png", alt="Логотип MaEd")
 				.headerInfoWr
 					.headerInfo
 						.headerInfo__date 29.94 – 25.07
@@ -53,7 +55,7 @@ html(lang="ru-RU")
 
 
 		// during development
-		.Yeah-I-m-working-on-that Сайт в разработке
+		// .Yeah-I-m-working-on-that Сайт в разработке
 
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")

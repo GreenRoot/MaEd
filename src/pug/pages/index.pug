@@ -4,70 +4,166 @@ html(lang="ru-RU")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, user-scalable=no")
 		meta(name="theme-color" content="#171717")
-		link(rel="stylesheet", href="static/css/main.css?v.0.0.5")
+		link(rel="stylesheet", href="static/css/main.css?v.0.0.9")
 		title MaEd
 	body
-		// header
-		header.container.container-test-1024.container-test-1440.container-test-1800
-			.header
-				a.header__logo(href="/")
-					img(src="static/img/logo.png", alt="Логотип MaEd")
-				a.header__logo-big(href="/")
-					img(src="static/img/logo-big.png", alt="Логотип MaEd")
-				.headerInfoWr
-					.headerInfo
-						.headerInfo__date 29.94 – 25.07
-						.headerInfo__time понедельник и&nbsp;четверг 18:00
-					.headerInfo
-						.headerInfo__format Формат
-						.headerInfo__formatDescr Вебинары, Skype, Facebook
-		// main
-		section.container.main-container.container-test-1024.container-test-1440
-			.main
-				.marketers
-					.marketers__photos
-						img(src="static/img/avatar-andrey-gavrikov.png", alt="Андрей Гавриков")
-						img(src="static/img/avatar-vladimir-davydov.png", alt="Владимир Давыдов")
-						img(src="static/img/avatar-mikhael-fedorov.png", alt="Михаил фёдоров")
-						img(src="static/img/avatar-andrey-gavrikov.png", alt="Андрей Гавриков")
-						img(src="static/img/avatar-vladimir-davydov.png", alt="Владимир Давыдов")
-						img(src="static/img/avatar-mikhael-fedorov.png", alt="Михаил фёдоров")
-						img(src="static/img/avatar-andrey-gavrikov.png", alt="Андрей Гавриков")
-					p.marketers__text Курс разработали практикующие интернет-маркетологи и&nbsp;совладельцы маркетинговой группы <span class="marketers__text-yellow">«Ком ето»</span> на основе опыта работы с российскими компаниями
-				h1.main__title Интернет- маркетинг
-				.main__subtitle Для B2B и сложных рынков
-				.main__text Покажем, как выстроить стратегию и&nbsp;тактику интернет-маркетинга для&nbsp;Вашей компании
-				a.button(href="#") Зарегистрироваться
-			img.main__img(src="static/img/andrey-gavrikov-main.png", alt="Андрей Гавриков")
-			img.main__img(src="static/img/andrey-gavrikov-main-big.png", alt="Андрей Гавриков")
-		// Andrew
-		.header__img
-		section.feature
-			.feature__img
-			.container
-				h2.feature__title Чем этот курс отличается от других?
-				.features
-					.features__block
-						img.features__img(src="static/img/steps.png", alt="Ступеньки")
-						.features__title Системная подача информации
-						.features__text Учим объединять инструменты интернет- маркетинга в систему, где каждый инструмент дополняет другой и нацелен на решение задач бизнеса. Отдельные метрики: конверсии, CTR, открытия писем&nbsp;—&nbsp;не наш приоритет
-					.features__block.features__block-du
-						img.features__img.features__img-du(src="static/img/digital-strategy.png", alt="Стратегия")
-						.features__title Резлуьтат – готовая digital&#8209;стратегия
-						.features__text Урок за уроком вы будете применять различные инструменты и создадите стратегию digital-маркетинга для вашего проекта на 2019 год. Это готовый план действий, который можно внедрить сразу после курса
-					.features__block
-						img.features__img(src="static/img/keyboard.png", alt="Практика")
-						.features__title Практика во&nbsp; время&nbsp;обучения
-						.features__text Вы сегментируете целевую аудиторию, проведете конкурентный анализ, подберете поисковые запросы, составите требования для контекстной рекламы, разработаете стратегию контент-маркетинга, email-маркетинга и т.д.
+		.main-wr
+			// --------------heder----------------
+			header.container.container-test-1024.container-test-1440.container-test-1800
+				.header
+					a.header__logo(href="/")
+						img(src="static/img/logo.png", alt="Логотип MaEd")
+					a.header__logo-big(href="/")
+						img(src="static/img/logo-big.png", alt="Логотип MaEd")
+					.headerInfoWr
+						.headerInfo
+							.headerInfo__date 29.94 – 25.07
+							.headerInfo__time понедельник и&nbsp;четверг 18:00
+						.headerInfo
+							.headerInfo__format Формат
+							.headerInfo__formatDescr Вебинары, Skype, Facebook
 
+			// --------------main-----------------
+			section.container.main-container.container-test-1024.container-test-1440
+				.main
+					.marketers
+						.marketers__photos
+							img(src="static/img/avatar-andrey-gavrikov.png", alt="Андрей Гавриков")
+							img(src="static/img/avatar-vladimir-davydov.png", alt="Владимир Давыдов")
+							img(src="static/img/avatar-mikhael-fedorov.png", alt="Михаил фёдоров")
+							img(src="static/img/avatar-andrey-gavrikov.png", alt="Андрей Гавриков")
+							img(src="static/img/avatar-vladimir-davydov.png", alt="Владимир Давыдов")
+							img(src="static/img/avatar-mikhael-fedorov.png", alt="Михаил фёдоров")
+							img(src="static/img/avatar-andrey-gavrikov.png", alt="Андрей Гавриков")
+						p.marketers__text Курс разработали практикующие интернет-маркетологи и&nbsp;совладельцы маркетинговой группы <span class="marketers__text-yellow">«Ком ето»</span> на основе опыта работы с российскими компаниями
+					h1.main__title Интернет- маркетинг
+					h2.main__subtitle Для B2B и сложных рынков
+					p.main__text Покажем, как выстроить стратегию и&nbsp;тактику интернет-маркетинга для&nbsp;Вашей компании
+					a.button(href="#") Зарегистрироваться
+				img.main__img(src="static/img/andrey-gavrikov-main.png", alt="Андрей Гавриков")
+				img.main__img(src="static/img/andrey-gavrikov-main-big.png", alt="Андрей Гавриков")
+			.header__img
 
+			// --------------feature---------------
+			section.feature
+				.feature__img
+				.container
+					h2.feature__title Чем этот курс отличается от других?
+					.features
+						.features__block
+							img.features__img(src="static/img/steps.png", alt="Ступеньки")
+							h3.features__title Системная подача информации
+							p.features__text Учим объединять инструменты интернет- маркетинга в систему, где каждый инструмент дополняет другой и нацелен на решение задач бизнеса. Отдельные метрики: конверсии, CTR, открытия писем&nbsp;—&nbsp;не наш приоритет
+						.features__block.features__block-du
+							img.features__img.features__img-du(src="static/img/digital-strategy.png", alt="Стратегия")
+							h3.features__title Резлуьтат – готовая digital&#8209;стратегия
+							p.features__text Урок за уроком вы будете применять различные инструменты и создадите стратегию digital-маркетинга для вашего проекта на 2019 год. Это готовый план действий, который можно внедрить сразу после курса
+						.features__block
+							img.features__img(src="static/img/keyboard.png", alt="Практика")
+							h3.features__title Практика во&nbsp; время&nbsp;обучения
+							p.features__text Вы сегментируете целевую аудиторию, проведете конкурентный анализ, подберете поисковые запросы, составите требования для контекстной рекламы, разработаете стратегию контент-маркетинга, email-маркетинга и т.д.
+						.features__block
+							//- svg(viewBox="0 0 357 282")
+							//- 	path.features__path(d="M 5.9145288,58.515306 5.0695961,227.07938 c 5.4407869,17.5855 14.3047369,32.61569 33.7973069,39.71183 41.046703,4.81365 82.832767,7.59405 125.472507,8.02686 52.245,-0.66921 104.49001,-1.68287 156.73501,-5.49206 16.9126,-8.88487 26.34591,-22.37239 32.95237,-37.5995 L 354.87173,56.402974 C 352.34708,43.528982 350.67052,30.555216 335.01581,19.225937 315.47858,10.933781 293.8333,7.2860945 270.02847,6.923159 L 201.09398,5.2845473 139.83636,4.862081 68.862013,9.0867444 C 56.142153,10.64221 44.213798,9.7647826 31.262509,15.001273 14.781699,22.983936 6.6511246,39.5724 5.9145288,58.515306 Z")
+							h3.features__title-custom Кастомизируем
+							p.features__text-custom программу под задачи вашей организации и обучим сотрудников
 
+			// --------------course-for------------
+			section.course-for
+				h2.course-for__title Для кого курс
+				.slider-course-for
+					.slider-course-for__list <span id="sliderList">1</span> из 4
+					.slider-course-for__img-wr
+						img(src="static/img/vader.png", alt="Вейдер")
+						h3.slider-course-for__title <span>Г</span>енеральный директор
+						p.slider-course-for__text Владелец бизнеса
+						.slider-course-for__circle
+						.slider-course-for__pages
+							<span class="slider-course-for__roll">предыдущий</span>
+							<span class="slider-course-for__numred">1</span><span class="slider-course-for__num">/4</span>
+							<span class="slider-course-for__roll">следующий</span>
+				.cource-info
+					.cource-info-block
+						img(src="static/img/glasses.png", alt="Очки")
+						h3.cource-info-block__title 100% контроль
+						p.cource-info-block__text Любых интернет-агетств и подрядчиков
+				.cource-info
+					.cource-info-block
+						img(src="static/img/kompas.png", alt="Компасс")
+						h3.cource-info-block__title Стратегия
+						p.cource-info-block__text Готовая стратегия электронного маркетинга на 6-12 месяцев
+				.cource-info
+					.cource-info-block
+						img(src="static/img/rubik.png", alt="Кубик Рубика")
+						h3.cource-info-block__title Аналитика
+						p.cource-info-block__text Аналитика «до денег» — то, что ждет от вас руководство
+				.cource-info
+					.cource-info-block
+						img(src="static/img/plan.png", alt="Схема")
+						h3.cource-info-block__title Ясность
+						p.cource-info-block__text Расскажем, как выстроить отдел интернет-маркетинга внутри компании
 
+			// --------------reasons---------------
+			section.reasons
+				h2.reasons__title 8 Причин пройти курс
+				p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+				img(src="static/img/borsh.png", alt="Борщ")
+				p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+				.slider-reasons__wr
+					h2.slider-reasons__title Минусы дорогих курсов:
+					p.slider-reasons__text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+					.pages
+						.pages__pre предыдущий
+						.pages__num 1
+						.pages__num-from /9
+						.pages__next следующий
+			// --------------specialists-----------
+			section.specialists
+				h3.specialists__title Курс проводят специалисты маркетинговой группы <span>«Комплето»</span>
 
+			// --------------teachers--------------
+			section.teachers
+				h2.teachers__title Преподаватели
 
+			// --------------training-packages-----
+			section.training
+				h2.training__title Выберите свой пакет обучения
 
-		// during development
-		// .Yeah-I-m-working-on-that Сайт в разработке
+			// --------------registration-form-----
+			form(action="").registration
+				h2.registration__title Регистрация
 
-		script(src="static/js/libs.min.js")
-		script(src="static/js/main.js")
+			// --------------comments--------------
+			section.comments
+				h2.comments__title Отзывы участников программы
+
+			// --------------programm--------------
+			section.programm
+				h2.programm__title Преподаватели
+
+			// --------------projects--------------
+			section.projects
+				h2.projects__title Программа разработана на основе проектов для наших клиентов
+
+			// --------------outcomes--------------
+			section.outcomes
+				h2.outcomes__title Результат обучения
+
+			// --------------cost------------------
+			section.cost
+				h2.cost__title Стоимость курса
+
+			// --------------registration-form-----
+			form(action="").registration
+				h2.registration__title Регистрация
+
+			// --------------warranty--------------
+			section.warranty
+				h2.warranty__title <span>100%</span> Гарантия возврата денег
+
+			// --------------footer----------------
+			footer.footer
+				h2.footer__title Подать заявку на корпортивное обучение
+
+			script(src="static/js/libs.min.js")
+			script(src="static/js/main.js")

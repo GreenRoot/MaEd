@@ -3,6 +3,7 @@
 	padding: 60px 30px 0 30px
 	text-align: center
 	&__title
+		width: 320px
 		font-family: Bebas Neue, sans-serif
 		font-size: 56px
 		letter-spacing: 4px
@@ -41,22 +42,71 @@
 		letter-spacing: 0.02em
 		text-align: left
 		color: #8B8B8B
+		margin: 0 0 30px 0
 
 .pages
 	display: flex
 	justify-content: center
 	align-items: center
 	&__pre
+		position: relative
 		font-family: Museo Sans Cyrl, sans-serif
 		font-size: 14px
 		letter-spacing: 0.02em
 		text-decoration-line: underline
 		color: #BEBEBE
+		padding: 0 15px 12px 15px
+		cursor: pointer
+		@media (min-width: 370px)
+			padding: 0 25px 12px 25px
+		&:before
+			content: ''
+			position: absolute
+			top: -6px
+			left: -20px
+			background: url(../img/list-pre.png) center no-repeat
+			width: 32px
+			height: 32px
+		&:hover
+			color: #343235
+			&:before
+				background: url(../img/list-pre-hover.png) center no-repeat
 	&__next
+		position: relative
 		font-family: Museo Sans Cyrl, sans-serif
 		font-size: 14px
 		letter-spacing: 0.02em
 		text-decoration-line: underline
 		color: #BEBEBE
+		padding: 0 15px 12px 15px
+		cursor: pointer
+		@media (min-width: 370px)
+			padding: 0 25px 12px 25px
+		&:after
+			content: ''
+			position: absolute
+			top: -6px
+			right: -20px
+			background: url(../img/list-next.png) center no-repeat
+			width: 32px
+			height: 32px
+		&:hover
+			color: #343235
+			&:after
+				background: url(../img/list-next-hover.png) center no-repeat
 	&__num
+		font-family: SignPainter, sans-serif
+		font-size: 32px
+		text-align: center
+		letter-spacing: 0.02em
+		color: #F03A2B
+		@media (min-width: 370px)
+			font-size: 40px
 		&-from
+			font-family: SignPainter, sans-serif
+			font-size: 32px
+			text-align: center
+			letter-spacing: 0.02em
+			color: #343235
+			@media (min-width: 370px)
+				font-size: 40px

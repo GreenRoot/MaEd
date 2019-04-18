@@ -1,10 +1,105 @@
 .teachers
 	background-color: #171717
-	height: 80vh
 	padding: 200px 0 0 0
+	margin: -290px 0 0 0
+	@media (min-width: 425px)
+		margin: -230px 0 0 0
 	&__title
+		padding: 50px 0 0 0
 		text-align: center
 		font-family: Bebas Neue, sans-serif
 		font-size: 48px // 56px
 		letter-spacing: 4px
 		color: #FFFFFF
+		margin: 0 0 15px 0
+
+.company
+	padding: 25px 0
+	position: absolute
+	top: -240px
+	left: calc(50% - 160px)
+	width: 320px
+	background-color: #fff
+	border-radius: 20px
+	@media (min-width: 370px)
+		left: calc(50% - 185px)
+		width: 370px
+	@media (min-width: 420px)
+		left: calc(50% - 199px)
+		width: 397px
+	&-container
+		position: relative
+	&__title
+		font-family: Museo Sans Cyrl, sans-serif
+		font-size: 20px
+		line-height: 24px
+		text-align: center
+		letter-spacing: 0.02em
+		padding: 0 50px
+		color: #343235
+	&__img
+		display: flex
+		padding: 10px 0px 20px
+		& img
+			filter: grayscale(1)
+		@media (min-width: 420px)
+			padding: 10px 20px 20px
+		&-block
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 50%
+
+.teachers-slider
+	&__mini-images //mini изображения слайдера
+		display: flex
+		overflow: hidden
+		margin: 0 0 20px 0
+.mini-image01
+	width: 100%
+
+.teachers-slider
+	&__full-info // полное описание преподавателя
+
+.full-info01
+	&__img
+	&__name
+		font-family: SignPainter, sans-serif
+		font-size: 32px
+		color: #FFFFFF
+		margin: -170px 0 13px 0
+	&__text
+		font-family: Museo Sans Cyrl, sans-serif
+		font-size: 16px
+		line-height: 32px
+		letter-spacing: 0.02em
+		color: #8B8B8B
+		margin: 0 0 50px 0
+	&__title
+		font-family: Bebas Neue, sans-serif
+		font-weight: bold
+		font-size: 24px
+		letter-spacing: 2px
+		color: #F03A2B
+		margin: 0 0 30px 0
+	&__competence
+		padding: 0 0 0 20px
+		&-text
+			position: relative
+			font-family: Museo Sans Cyrl, sans-serif
+			font-size: 16px
+			line-height: 32px
+			letter-spacing: 0.02em
+			color: #fff
+			margin: 0 0 30px 0
+			&:before
+				content: ''
+				position: absolute
+				top: 15px
+				left: -20px
+				width: 12px
+				height: 2px
+				background-color: #FF1B5A
+
+
+

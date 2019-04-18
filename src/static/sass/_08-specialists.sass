@@ -1,13 +1,42 @@
 .specialists
 	background-color: #fff
 	height: 80vh
-	padding: 200px 0 0 0
+	padding: 100px 0 0 0
 	&__title
-		text-align: center
+		position: relative
+		text-align: left
 		font-family: Museo Sans Cyrl, sans-serif
-		font-size: 32px
+		font-size: 28px
 		line-height: 40px
 		letter-spacing: 0.02em
 		color: #343235
+		padding: 0 15px
+		margin: 0 0 32px 0
+		@media (min-width: 350px)
+			font-size: 32px
+			padding: 0 0
 		& span
 			color: #f03a2b
+		&:before
+			content: ''
+			position: absolute
+			top: -60px
+			left: 0
+			width: 49px
+			height: 54px
+			background: url(../img/yellow-c.png) center no-repeat
+	&__img
+		position: relative
+		width: 320px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 900px
+			height: 500px
+			background-color: #fff
+			border-radius: 100%
+		@media (min-width: 425px)
+			width: 425px
+			margin: 0 0 0 -38px

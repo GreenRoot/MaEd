@@ -4,7 +4,7 @@ html(lang="ru-RU")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, user-scalable=no")
 		meta(name="theme-color" content="#171717")
-		link(rel="stylesheet", href="static/css/main.css?v.0.0.9")
+		link(rel="stylesheet", href="static/css/main.css?v.0.0.11")
 		title MaEd
 	body
 		.main-wr
@@ -79,9 +79,11 @@ html(lang="ru-RU")
 						p.slider-course-for__text Владелец бизнеса
 						.slider-course-for__circle
 						.slider-course-for__pages
-							<span class="slider-course-for__roll">предыдущий</span>
-							<span class="slider-course-for__numred">1</span><span class="slider-course-for__num">/4</span>
-							<span class="slider-course-for__roll">следующий</span>
+							.pages
+								.pages__pre предыдущий
+								.pages__num 1
+								.pages__num-from /4
+								.pages__next следующий
 				.cource-info
 					.cource-info-block
 						img(src="static/img/glasses.png", alt="Очки")
@@ -105,25 +107,67 @@ html(lang="ru-RU")
 
 			// --------------reasons---------------
 			section.reasons
-				h2.reasons__title 8 Причин пройти курс
-				p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
-				img(src="static/img/borsh.png", alt="Борщ")
-				p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
-				.slider-reasons__wr
-					h2.slider-reasons__title Минусы дорогих курсов:
-					p.slider-reasons__text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
-					.pages
-						.pages__pre предыдущий
-						.pages__num 1
-						.pages__num-from /9
-						.pages__next следующий
+				.container
+					h2.reasons__title 8 Причин пройти курс
+					p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+					img(src="static/img/borsh.png", alt="Борщ")
+					p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+					.slider-reasons__wr
+						h2.slider-reasons__title Минусы дорогих курсов:
+						p.slider-reasons__text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+						.pages
+							.pages__pre предыдущий
+							.pages__num 1
+							.pages__num-from /8
+							.pages__next следующий
 			// --------------specialists-----------
 			section.specialists
-				h3.specialists__title Курс проводят специалисты маркетинговой группы <span>«Комплето»</span>
+				.container
+					h3.specialists__title Курс проводят специалисты маркетинговой группы <span>«Комплето»</span>
+					img.specialists__img(src="static/img/completo-peoples-small.png", alt="Специалисты группы Комплето")
 
 			// --------------teachers--------------
 			section.teachers
-				h2.teachers__title Преподаватели
+				.container.company-container
+					.company
+						h3.company__title У нас учились специалисты из этих компаний:
+						.company__img
+							.company__img-block
+								img(src="/static/img/dassault.png", alt="dassault")
+							.company__img-block
+								img(src="/static/img/gasprom01.png", alt="Газпром")
+						.pages
+							.pages__pre предыдущий
+							.pages__num 1
+							.pages__num-from /8
+							.pages__next следующий
+					h2.teachers__title Преподаватели
+					.teachers-slider
+						.teachers-slider__mini-images
+							.mini-image01
+								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+							.mini-image01
+								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+							.mini-image01
+								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+							.mini-image01
+								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+							.mini-image01
+								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+						.teachers-slider__full-info
+							.full-info01
+								.full-info01__img
+									img(src="static/img/mixail-fedorov-big.png", alt="Михаил Фёдоров")
+								h3.full-info01__name Михаил Федоров
+								p.full-info01__text Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
+								h3.full-info01__title Ключевые компетенци
+								.full-info01__competence
+									p.full-info01__competence-text SEO-архитектор: планирование, прогнозирование и реализация стратегий SEO и SEM
+									p.full-info01__competence-text Поисковая и контекстная реклама
+									p.full-info01__competence-text Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)
+									p.full-info01__competence-text Классический маркетинг
+									p.full-info01__competence-text Построение отчетности с помощью сквозной аналитики для управления бизнесом
+
 
 			// --------------training-packages-----
 			section.training

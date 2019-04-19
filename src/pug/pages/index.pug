@@ -251,11 +251,56 @@ html(lang="ru-RU")
 							h3.package-card__price 150 000 руб
 							p.package-card__price-text Зависит от количества часов, сотрудников и задач обучения
 							a(href="#").package-card__info Что входит в пакет
+					.training-info
+						.training-info__card
+							.training-info-img
+								img(src="static/img/usb.png", alt="Доступ к записям")
+							h3.training-info-title Доступ к записям
+							p.training-info-text Доступ к записям и материалам курса на полгода
+						.training-info__card
+							.training-info-img
+								img(src="static/img/lifebuoy.png", alt="Поддержка")
+							h3.training-info-title Поддержка
+							p.training-info-text Проведем 2 мастер-группы: коллективный разбор кейсов и Скайп- конференцию с преподавателями. Ответим на все вопросы!
+						.training-info__card
+							.training-info-img
+								img(src="static/img/closed-group.png", alt="Закрытая группа")
+							h3.training-info-title Закрытая группа
+							p.training-info-text Вы станете участником закрытого клуба выпускников, в котором маркетологи и владельцы бизнеса обмениваются опытом, делятся полезными материалами, а преподаватели отвечают на сложные вопросы по digital-маркетингу
+
 
 
 			// --------------registration-form-----
-			form(action="").registration
-				h2.registration__title Регистрация
+			.registration-wr
+				.container
+					form(action="").registration
+						h2.registration__title Регистрация
+						.registration__label-wr
+							label.registration__label Ваше имя
+								input.registration__label-text(type="text")
+						.registration__label-wr
+							label.registration__label Ваш e-mail
+								input.registration__label-text(type="text")
+						.registration__label-wr
+							label.registration__label Ваш телефон
+								input.registration__label-text(type="text")
+						.registration__label-wr
+							label.registration__label Промокод
+								input.registration__label-text(type="text" invalid)
+
+						a.button(href="#") Зарегистрироваться
+						label
+							input(type="checkbox")
+							p Согласен с условиями оферты и ознакомлен с правилами обработки персональных данных
+						label
+							input(type="checkbox")
+							p Подписаться на материалы блога и анонсы интересных событий
+						label
+							input(type="checkbox")
+							p Хочу приобрести пакет «Стратегия»
+						label
+							input(type="checkbox")
+							p Хочу приобрести пакет «Тактика»
 
 			// --------------comments--------------
 			section.comments

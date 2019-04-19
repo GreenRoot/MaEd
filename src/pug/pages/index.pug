@@ -4,6 +4,7 @@ html(lang="ru-RU")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, user-scalable=no")
 		meta(name="theme-color" content="#171717")
+		link(rel="stylesheet", href="static/css/slick.css")
 		link(rel="stylesheet", href="static/css/main.css?v.0.0.11")
 		title MaEd
 	body
@@ -154,7 +155,7 @@ html(lang="ru-RU")
 								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
 							.mini-image01
 								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
-						.teachers-slider__full-info
+						#slider01.teachers-slider__full-info
 							.full-info01
 								.full-info01__img
 									img(src="static/img/mixail-fedorov-big.png", alt="Михаил Фёдоров")
@@ -167,11 +168,90 @@ html(lang="ru-RU")
 									p.full-info01__competence-text Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)
 									p.full-info01__competence-text Классический маркетинг
 									p.full-info01__competence-text Построение отчетности с помощью сквозной аналитики для управления бизнесом
-
+								.cooperated
+									h3.cooperated__title Сотрундничал
+									.cooperated__logo-wr
+										.cooperated__logo-img
+											img(src="/static/img/gasprom01.png", alt="ГазПром")
+										.cooperated__logo-img
+											img(src="/static/img/gasprom01.png", alt="ГазПром")
+							.full-info01
+								.full-info01__img
+									img(src="static/img/mixail-fedorov-big.png", alt="Михаил Фёдоров")
+								h3.full-info01__name Михаил Федоров
+								p.full-info01__text Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
+								h3.full-info01__title Ключевые компетенци
+								.full-info01__competence
+									p.full-info01__competence-text SEO-архитектор: планирование, прогнозирование и реализация стратегий SEO и SEM
+									p.full-info01__competence-text Поисковая и контекстная реклама
+									p.full-info01__competence-text Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)
+									p.full-info01__competence-text Классический маркетинг
+									p.full-info01__competence-text Построение отчетности с помощью сквозной аналитики для управления бизнесом
+								.cooperated
+									h3.cooperated__title Сотрундничал
+									.cooperated__logo-wr
+										.cooperated__logo-img
+											img(src="/static/img/gasprom01.png", alt="ГазПром")
+										.cooperated__logo-img
+											img(src="/static/img/gasprom01.png", alt="ГазПром")
+							.full-info01
+								.full-info01__img
+									img(src="static/img/mixail-fedorov-big.png", alt="Михаил Фёдоров")
+								h3.full-info01__name Михаил Федоров
+								p.full-info01__text Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
+								h3.full-info01__title Ключевые компетенци
+								.full-info01__competence
+									p.full-info01__competence-text SEO-архитектор: планирование, прогнозирование и реализация стратегий SEO и SEM
+									p.full-info01__competence-text Поисковая и контекстная реклама
+									p.full-info01__competence-text Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)
+									p.full-info01__competence-text Классический маркетинг
+									p.full-info01__competence-text Построение отчетности с помощью сквозной аналитики для управления бизнесом
+								.cooperated
+									h3.cooperated__title Сотрундничал
+									.cooperated__logo-wr
+										.cooperated__logo-img
+											img(src="/static/img/gasprom01.png", alt="ГазПром")
+										.cooperated__logo-img
+											img(src="/static/img/gasprom01.png", alt="ГазПром")
 
 			// --------------training-packages-----
 			section.training
-				h2.training__title Выберите свой пакет обучения
+				.container
+					h2.training__title Выберите свой пакет&nbsp;обучения
+					.package-wr
+						.package-card
+							h3.package-card__title пакет
+							h2.package-card__name «<span>С</span>тратегия»
+							.package-card__img-wr
+								img(src="static/img/box_strategy.png", alt="Пакет стратегия")
+								.package-card__img-place Мест осталось
+								p.package-card__img-place-text 180/200
+							h3.package-card__price 71 000 руб
+							p.package-card__price-text От 6 256 рублей в месяц***
+							a(href="#").package-card__info Что входит в пакет
+					.package-wr
+						.package-card
+							h3.package-card__title пакет
+							h2.package-card__name «<span>С</span>тратегия»
+							.package-card__img-wr
+								img(src="static/img/box_strategy.png", alt="Пакет стратегия")
+								.package-card__img-place Мест осталось
+								p.package-card__img-place-text 180/200
+							h3.package-card__price 71 000 руб
+							p.package-card__price-text От 6 256 рублей в месяц***
+							a(href="#").package-card__info Что входит в пакет
+					.package-wr
+						.package-card
+							h3.package-card__title пакет
+							h2.package-card__name «<span>К</span>орпоративный»
+							.package-card__img-wr
+								img(src="static/img/box_strategy.png", alt="Пакет стратегия")
+								.package-card__img-place Мест осталось
+								p.package-card__img-place-text 180/200
+							h3.package-card__price 150 000 руб
+							p.package-card__price-text Зависит от количества часов, сотрудников и задач обучения
+							a(href="#").package-card__info Что входит в пакет
+
 
 			// --------------registration-form-----
 			form(action="").registration

@@ -308,12 +308,44 @@ html(lang="ru-RU")
 
 			// --------------comments--------------
 			section.comments
-				h2.comments__title Отзывы участников программы
+				.container
+					h2.comments__title Отзывы участников программы
+						.comments-wr
+							.comments__youtube
+								img(src="static/img/youtube01.png", alt="video")
+							.comments__comment
+								.student-wr
+									img.student-img(src="static/img/avatar-dmitry-topolya-mini.png", alt="Дмитрий Тополя")
+									.student-name-and-stram
+										h3.student-name <span>Д</span>итрий Тополя
+										p.student-stream 15 поток
+								p.comment-wr Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
+							.pages
+								.pages__pre предыдущий
+								.pages__num 1
+								.pages__num-from /3
+								.pages__next следующий
+
 
 			// --------------programm--------------
 			section.programm
-				h2.programm__title Преподаватели
-
+				.container
+					h2.programm__title Преподаватели
+					.teacher-wr
+						h3.teacher__modul Модуль 1
+						.teacher__img
+							img(src="static/img/avatar-andrey-gavrikov3.png", alt="Андрей Гавриков")
+						h3.teacher__name Андрей Гавриков
+						p.teacher__text Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте
+						.teacher__info
+							.teacher-theory 3.5 часа
+							.teacher-practice 2 часа
+						a(href="").teacher__button Подробнее
+					.pages
+						.pages__pre предыдущий
+						.pages__num 1
+						.pages__num-from /3
+						.pages__next следующий
 			// --------------projects--------------
 			section.projects
 				h2.projects__title Программа разработана на основе проектов для наших клиентов

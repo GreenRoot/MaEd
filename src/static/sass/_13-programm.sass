@@ -1,10 +1,131 @@
 .programm
 	background-color: #fff
-	height: 80vh
-	padding: 200px 0 0 0
+	padding: 128px 0 0 0
 	&__title
 		text-align: center
 		font-family: Bebas Neue, sans-serif
-		font-size: 48px // 56px
+		font-size: 56px // 56px
 		letter-spacing: 4px
+		color: #343235
+		margin: 0 0 30px 0
+
+.teacher
+	&-wr
+		position: relative
+		border: 2px solid #E5E5E5
+		box-sizing: border-box
+		border-radius: 24px
+		padding: 23px 32px 26px 32px
+		margin: 0 0 24px 0
+		text-align: center
+	&__modul
+		position: absolute
+		top: -15px
+		left: 50%
+		transform: translateX(-50%)
+		display: inline-block
+		background: #96CB4F
+		border-radius: 8px
+		margin: 0 auto
+		padding: 6px 20px
+		font-family: Bebas Neue
+		font-style: normal
+		font-weight: bold
+		font-size: 16px
+		line-height: normal
+		text-align: center
+		letter-spacing: 2px
+		color: #FFFFFF
+	&__img
+		margin: 0 0 -6px 0
+	&__name
+		text-align: left
+		font-family: Bebas Neue, sans-serif
+		font-style: normal
+		font-weight: bold
+		font-size: 24px
+		line-height: normal
+		letter-spacing: 2px
+		color: #343235
+		margin: 0 0 12px 0
+	&__text
+		text-align: left
+		font-family: Museo Sans Cyrl, sans-serif
+		font-size: 14px
+		line-height: 24px
+		letter-spacing: 0.02em
+		color: #343235
+		margin: 0 0 42px 0
+	&__button
+		font-family: Museo Sans Cyrl
+		font-size: 16px
+		line-height: normal
+		text-align: center
+		letter-spacing: 0.02em
+		color: #F03A2B
+
+.teacher__info
+	margin: 0 0 22px 0
+	padding: 0 0 24px 0
+	border-bottom: 2px solid #E5E5E5
+	display: flex
+	justify-content: space-around
+	align-items: center
+.teacher-theory
+	position: relative
+	font-family: Museo Sans Cyrl, sans-serif
+	font-size: 14px
+	line-height: normal
+	color: #777777
+	width: 50%
+	text-align: left
+	margin-left: 35px
+	width: 50%
+	&:before
+		content: ''
+		position: absolute
+		top: -19px
+		left: -37px
+		background: url(../img/whatch-black.png) center no-repeat
+		width: 22px
+		height: 32px
+	&:after
+		content: 'Теория'
+		position: absolute
+		top: -24px
+		left: 0
+		font-family: Museo Sans Cyrl, sans-serif
+		font-size: 12px
+		line-height: normal
+		letter-spacing: 2px
+		text-transform: uppercase
+		color: #343235
+.teacher-practice
+	position: relative
+	font-family: Museo Sans Cyrl, sans-serif
+	font-size: 14px
+	line-height: normal
+	color: #777777
+	width: 50%
+	text-align: left
+	margin-left: 73px
+	width: 50%
+	&:before
+		content: ''
+		position: absolute
+		top: -19px
+		left: -37px
+		background: url(../img/practice.png) center no-repeat
+		width: 22px
+		height: 32px
+	&:after
+		content: 'Практика'
+		position: absolute
+		top: -24px
+		left: 0
+		font-family: Museo Sans Cyrl, sans-serif
+		font-size: 12px
+		line-height: normal
+		letter-spacing: 2px
+		text-transform: uppercase
 		color: #343235

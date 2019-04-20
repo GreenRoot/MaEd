@@ -5,7 +5,7 @@ html(lang="ru-RU")
 		meta(name="viewport" content="width=device-width, user-scalable=no")
 		meta(name="theme-color" content="#171717")
 		link(rel="stylesheet", href="static/css/slick.css")
-		link(rel="stylesheet", href="static/css/main.css?v.0.0.11")
+		link(rel="stylesheet", href="static/css/main.css?v.0.0.12")
 		title MaEd
 	body
 		.main-wr
@@ -287,20 +287,24 @@ html(lang="ru-RU")
 						.registration__label-wr
 							label.registration__label Промокод
 								input.registration__label-text(type="text" invalid)
-
 						a.button(href="#") Зарегистрироваться
-						label
-							input(type="checkbox")
-							p Согласен с условиями оферты и ознакомлен с правилами обработки персональных данных
-						label
-							input(type="checkbox")
-							p Подписаться на материалы блога и анонсы интересных событий
-						label
-							input(type="checkbox")
-							p Хочу приобрести пакет «Стратегия»
-						label
-							input(type="checkbox")
-							p Хочу приобрести пакет «Тактика»
+						.registration__checkbox
+							.registration__checkbox-wr
+								label.registration__checkbox-label Согласен с условиями оферты и ознакомлен с правилами обработки персональных данных
+									input.registration__checkbox-input(type="checkbox")
+									span.registration__checkbox-input-checkbox
+							.registration__checkbox-wr
+								label.registration__checkbox-label Подписаться на материалы блога и анонсы интересных событий
+									input.registration__checkbox-input(type="checkbox")
+									span.registration__checkbox-input-checkbox
+							.registration__checkbox-wr
+								label.registration__checkbox-label Хочу приобрести пакет «Стратегия»
+									input.registration__checkbox-input(type="checkbox")
+									span.registration__checkbox-input-checkbox
+							.registration__checkbox-wr
+								label.registration__checkbox-label Хочу приобрести пакет «Тактика»
+									input.registration__checkbox-input(type="checkbox")
+									span.registration__checkbox-input-checkbox
 
 			// --------------comments--------------
 			section.comments

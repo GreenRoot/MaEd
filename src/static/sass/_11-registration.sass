@@ -14,7 +14,7 @@
 		letter-spacing: 0.02em
 		color: #FFFFFF
 
-.registration
+.registration //Поля ввода данных
 	margin: 0 -37.5px
 	&__label-wr
 		position: relative
@@ -38,7 +38,7 @@
 			left: -32px
 			width: 348px
 			padding: 22px 0 22px 32px
-			font-family: Museo Sans Cyrl
+			font-family: Museo Sans Cyrl, sans-serif
 			font-size: 16px
 			letter-spacing: 0.02em
 			text-transform: uppercase
@@ -52,3 +52,38 @@
 				border: 2px solid #FED033
 			&:invalid
 				border: 2px solid #F03A2B
+
+.registration //чекбоксы
+	&__checkbox
+		padding: 37px 0 30px
+		&-wr
+			position: relative
+			width: 250px
+			margin: 0 0 18px 0
+			padding: 0 0 0 42px
+		&-label
+			font-family: Museo Sans Cyrl, sans-serif
+			font-size: 12px
+			line-height: 16px
+			letter-spacing: 0.02em
+			color: #8B8B8B
+		&-input
+			position: absolute
+			top: 0
+			left: -30px
+			appearance: none
+			&-checkbox
+				position: absolute
+				top: 0
+				left: 0
+				width: 24px
+				height: 24px
+				background-image: url(../img/checkbox-off.svg)
+
+//сложная магия с чекбоксами
+.registration__checkbox-input:checked + .registration__checkbox-input-checkbox
+	background-image: url(../img/checkbox-on.png)
+.registration__checkbox-input:focus + .registration__checkbox-input-checkbox
+	background-image: url(../img/checkbox-off-focused.png)
+.registration__checkbox-input:checked:focus + .registration__checkbox-input-checkbox
+	background-image: url(../img/checkbox-on-focused.png)

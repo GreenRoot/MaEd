@@ -5,4 +5,10 @@ $(document).ready(function () {
 		autoplay: true,
 		autoplaySpeed: 200000
 	});
+	$('#outcomesSlider').slick({
+		dots: false,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 200000
+	});
 });

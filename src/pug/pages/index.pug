@@ -2,10 +2,10 @@ doctype html
 html(lang="ru-RU")
 	head
 		meta(charset="UTF-8")
-		meta(name="viewport" content="width=device-width, user-scalable=no")
+		meta(name="viewport" content="width=425px, user-scalable=no")
 		meta(name="theme-color" content="#171717")
 		link(rel="stylesheet", href="static/css/slick.css")
-		link(rel="stylesheet", href="static/css/main.css?v.0.0.12")
+		link(rel="stylesheet", href="static/css/main.css?v.0.0.15")
 		title MaEd
 	body
 		.main-wr
@@ -389,15 +389,107 @@ html(lang="ru-RU")
 			section.outcomes
 				.container
 					h2.outcomes__title Результат обучения
-				
-
+				.outcomes-slider#outcomesSlider
+					.outcome-wr
+						.outcome
+							img(src="static/img/brain.png", alt="Системные знания")
+							h3.outcome__title Системные знания
+							p.outcome__text Системные знания и готовая стратегия digital-маркетинга для вашей компании. Бери и делай
+					.outcome-wr
+						.outcome.outcome-diplom
+							img(src="static/img/diploma.png", alt="Диплом")
+							h3.outcome__title Диплом
+							p.outcome__text Диплом о дополнительном образовании
+					.outcome-wr
+						.outcome.outcome-chess
+							img(src="static/img/chess.png", alt="Шахматный конь")
+							h3.outcome__title 100% понимание
+							p.outcome__text 100% понимание, как выстроить сквозную аналитику до прибыли в своей компании
+					.outcome-wr
+						.outcome.outcome-labirint
+							img(src="static/img/labirint.png", alt="Лабиринт")
+							h3.outcome__title Выход из тупика
+							p.outcome__text Аналитика до продаж, как выйти из тупика, даже если раньше перепробовали всё: каналы рекламы, подрядчиков, переделку сайта
+					.outcome-wr
+						.outcome.outcome-fb
+							img(src="static/img/fb.png", alt="FaceBook")
+							h3.outcome__title Группа Facebook
+							p.outcome__text Закрытая группа, где можно задавать вопросы и после окончания курса
+					.outcome-wr
+						.outcome.outcome-videos
+							img(src="static/img/videos.png", alt="записи")
+							h3.outcome__title Доступ к записям
+							p.outcome__text Бессрочный доступ к записям всех модулей курса
+					.outcome-wr
+						.outcome.outcome-studentcap
+							img(src="static/img/studentcap.png", alt="Студенческая шапка")
+							h3.outcome__title Навыки
+							p.outcome__text Научитесь использовать все инструменты digital-маркетинга на благо компании
+					.outcome-wr
+						.outcome.outcome-bomb
+							img(src="static/img/bomb2.png", alt="bomb")
+							h3.outcome__title Трудоустройство
+							p.outcome__text Лучшим студентам помогаем устроиться на работу в агентства или к клиентам
+				.pages(style="padding-top:68px")
+					.pages__pre предыдущий
+					.pages__num 1
+					.pages__num-from /4
+					.pages__next следующий
 			// --------------cost------------------
 			section.cost
-				h2.cost__title Стоимость курса
+				.container
+					h2.cost__title Стоимость курса
+					.cost-wr
+						.cost__package
+							h3.cost__subtitle Пакет
+							h2.cost__strategy-title «<span>С</span>тратегия»
+							.cost__img
+								img(src="static/img/box-strategy.png", alt="пакет стратегия")
+							.cost__price 69 000 руб
+							.cost__price-text От 6 256 рублей в месяц***
+						.cost__package
+							h3.cost__subtitle Пакет
+							h2.cost__strategy-title «<span>Т</span>актика»
+							.cost__img
+								img(src="static/img/box-strategy.png", alt="пакет тактика")
+							.cost__price 49 000 руб
+							.cost__price-text От 4 442 рублей в месяц***
 
 			// --------------registration-form-----
-			form(action="").registration
-				h2.registration__title Регистрация
+			.registration-wr
+				.container
+					form(action="").registration
+						h2.registration__title Регистрация
+						.registration__label-wr
+							label.registration__label Ваше имя
+								input.registration__label-text(type="text")
+						.registration__label-wr
+							label.registration__label Ваш e-mail
+								input.registration__label-text(type="text")
+						.registration__label-wr
+							label.registration__label Ваш телефон
+								input.registration__label-text(type="text")
+						.registration__label-wr
+							label.registration__label Промокод
+								input.registration__label-text(type="text" invalid)
+						a.button(href="#") Зарегистрироваться
+						.registration__checkbox
+							.registration__checkbox-wr
+								label.registration__checkbox-label Согласен с условиями оферты и ознакомлен с правилами обработки персональных данных
+									input.registration__checkbox-input(type="checkbox")
+									span.registration__checkbox-input-checkbox
+							.registration__checkbox-wr
+								label.registration__checkbox-label Подписаться на материалы блога и анонсы интересных событий
+									input.registration__checkbox-input(type="checkbox")
+									span.registration__checkbox-input-checkbox
+							.registration__checkbox-wr
+								label.registration__checkbox-label Хочу приобрести пакет «Стратегия»
+									input.registration__checkbox-input(type="checkbox")
+									span.registration__checkbox-input-checkbox
+							.registration__checkbox-wr
+								label.registration__checkbox-label Хочу приобрести пакет «Тактика»
+									input.registration__checkbox-input(type="checkbox")
+									span.registration__checkbox-input-checkbox
 
 			// --------------warranty--------------
 			section.warranty

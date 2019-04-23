@@ -3,6 +3,9 @@ body
 	padding: 0
 	background-color: #171717
 	color: #fff
+	box-sizing: border-box
+a
+	box-sizing: border-box
 
 .main-wr
 	position: relative
@@ -253,6 +256,7 @@ h1, h2, h3, p
 
 
 .button
+	box-sizing: border-box
 	position: relative
 	text-decoration: none
 	color: #fff
@@ -264,8 +268,10 @@ h1, h2, h3, p
 	font-size: 20px
 	letter-spacing: 2px
 	background: #006EC7
+	border: 2px solid #006EC7
 	border-radius: 16px
 	cursor: pointer
+	transition: 0.4s
 	&:before
 		content: ''
 		position: absolute
@@ -285,9 +291,24 @@ h1, h2, h3, p
 		&:hover
 			color: #006EC7
 			background-color: #fff
-			border: 2px solid #006EC7
-			padding: 28px 65px 26px 106px
-			transition: 0.4s
+
+.dowloand-button
+	&:before
+		width: 26px
+		height: 28px
+		background-image: url(../img/dowloand.png)
+	&:after
+		content: ''
+		position: absolute
+		top: -120px
+		left: calc(50% - 96px)
+		width: 192px
+		height: 146px
+		background-image: url(../img/free-book.png)
+		@media (min-width: 1024px)
+			top: -35px
+			left: 255px
+
 
 .header__img
 	position: absolute

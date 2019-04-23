@@ -516,14 +516,38 @@ html(lang="ru-RU")
 							p.profit__text Знаете сколько денег можно потерять без&nbsp;системных знаний? А мы посчитали!
 					a.button.dowloand-button(href="#") Скачать статью
 
+			// --------------corporate-training----
 			section.corporate-training
+				.corporate-training__circle
+					.corporate-training__circle-d
 				.container
 					h2.corporate-training__title Корпоративное обучение
-					.training-slider
-
+						.corporate-training__title-garanty с гарантией
+				.training-slider#trainingSlider
+					.training-slider__wr
+						h3.training-slider__title <span>А</span>даптация курса
+						p.training-slider__text Адаптируем курс под задачи&nbsp;вашей&nbsp;компании
+					.training-slider__wr
+						h3.training-slider__title.corporate-training__title-a <span>И</span>ндивидуальный график
+						p.training-slider__text Индивидуальный график для группы, не нарушающий рабочий процесс
+					.training-slider__wr
+						h3.training-slider__title.corporate-training__title-b <span>П</span>одготовка команды
+						p.training-slider__text Подготовка и сплочение команды специалистов, которые по окончании курса реализуют созданную стратегию
+					.training-slider__wr
+						h3.training-slider__title.corporate-training__title-c <span>Г</span>арантия обучения
+						p.training-slider__text Бесплатно обучим одного сотрудника, если в течение 6 месяцев обученный специалист уволится
+				.container
+					.pages(style="padding-top:7px; position: relative;")
+						.pages__pre предыдущий
+						.pages__num 1
+						.pages__num-from /8
+						.pages__next следующий
+					.corporate-training__img
+						img(src="static/img/garanty-mans.png", alt="гарантия")
 			// --------------footer----------------
 			footer.footer
 				h2.footer__title Подать заявку на корпортивное обучение
+					
 
 			script(src="static/js/libs.min.js")
 			script(src="static/js/main.js")

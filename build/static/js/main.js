@@ -11,4 +11,10 @@ $(document).ready(function () {
 		autoplay: true,
 		autoplaySpeed: 200000
 	});
+	$('#trainingSlider').slick({
+		dots: false,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 200000
+	});
 });

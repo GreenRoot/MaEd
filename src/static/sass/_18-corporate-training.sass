@@ -3,11 +3,112 @@
 	background-color: #fff
 	padding: 50px 0 50px 0
 	&__title
+		position: relative
 		text-align: left
 		font-family: Bebas Neue, sans-serif
 		font-style: normal
 		font-weight: normal
 		font-size: 56px
-		line-height: normal
+		line-height: 56px
 		letter-spacing: 4px
 		color: #343235
+		margin: 0 0 109px 0
+		&-garanty
+			position: absolute
+			top: 134px
+			left: 6px
+			display: inline-block
+			padding: 8px 23px 5px 44px
+			background: #96CB4F
+			border-radius: 8px
+			font-family: Bebas Neue, sans-serif
+			font-style: normal
+			font-weight: bold
+			font-size: 16px
+			line-height: normal
+			text-align: center
+			letter-spacing: 2px
+			color: #FFFFFF
+			&:before
+				content: ''
+				position: absolute
+				background: url(../img/garanty.png) center no-repeat
+				top: 6px
+				left: 20px
+				width: 16px
+				height: 20px
+	&__img
+		display: flex
+		justify-content: center
+		margin-top: 70px
+
+.training-slider //слайдер
+	position: relative
+	&__wr
+		display: flex
+		justify-content: center
+		flex-direction: column
+		padding: 60px 30px 0
+	&__title
+		position: relative
+		font-family: SignPainter, sans-serif
+		font-size: 40px
+		line-height: 40px
+		text-align: center
+		letter-spacing: 0.02em
+		color: #343235
+		margin: 0 0 17px 0
+		&:before
+			content: ''
+			position: absolute
+			top: -54px
+			left: calc(50% - 47px / 2)
+			background: url(../img/corporate-training__title.png) center no-repeat
+			width: 47px
+			height: 46px
+		& span
+			color: #F03A2B
+	&__text
+		font-family: Museo Sans Cyrl, sans-serif
+		font-size: 18px
+		line-height: 32px
+		text-align: center
+		letter-spacing: 0.02em
+		color: #343235
+		height: 118px
+.corporate-training__title-a:before
+	background: url(../img/corporate-training__title-a.png) center no-repeat
+	left: calc(50% - 48px / 2)
+	width: 48px
+	height: 46px
+.corporate-training__title-b:before
+	background: url(../img/corporate-training__title-b.png) center no-repeat
+	left: calc(50% - 46px / 2)
+	width: 46px
+	height: 48px
+.corporate-training__title-c:before
+	background: url(../img/corporate-training__title-c.png) center no-repeat
+	left: calc(50% - 36px / 2)
+	width: 36px
+	height: 46px
+
+.corporate-training__circle
+	position: absolute
+	top: 200px
+	left: 0px
+	width: 425px
+	height: 425px
+	left: 0px
+	border-radius: 50%
+	border: 60px solid #F2F2F2
+	box-sizing: border-box
+	&-d
+		position: absolute
+		width: 224px
+		height: 224px
+		left: 40px
+		top: 40px
+		border-radius: 50%
+		border: 60px solid #F2F2F2
+		box-sizing: border-box
+

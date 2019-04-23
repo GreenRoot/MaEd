@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=425px, user-scalable=no">
     <meta name="theme-color" content="#171717">
     <link rel="stylesheet" href="static/css/slick.css">
-    <link rel="stylesheet" href="static/css/main.css?v.0.0.16">
+    <link rel="stylesheet" href="static/css/main.css?v.0.0.17">
     <title>MaEd</title>
   </head>
   <body>
@@ -606,9 +606,45 @@
         </div>
       </section>
       <!-- --------------footer------------------>
-      <footer class="footer">
-        <h2 class="footer__title">Подать заявку на корпортивное обучение</h2>
-      </footer>
+      <div class="registration-wr">
+        <div class="container">
+          <form class="registration" action="">
+            <h2 class="registration__title">Подать заявку на корпортивное обучение</h2>
+            <div class="registration__label-wr">
+              <label class="registration__label">Ваше имя
+                <input class="registration__label-text" type="text">
+              </label>
+            </div>
+            <div class="registration__label-wr">
+              <label class="registration__label">Ваш e-mail
+                <input class="registration__label-text" type="text">
+              </label>
+            </div>
+            <div class="registration__label-wr">
+              <label class="registration__label">Ваш телефон
+                <input class="registration__label-text" type="text">
+              </label>
+            </div>
+            <div class="registration__label-wr">
+              <label class="registration__label">Промокод
+                <input class="registration__label-text" type="text" invalid>
+              </label>
+            </div><a class="button" href="#">Подать заявку</a>
+            <div class="registration__checkbox">
+              <div class="registration__checkbox-wr">
+                <label class="registration__checkbox-label">Согласен с условиями оферты и ознакомлен с правилами обработки персональных данных
+                  <input class="registration__checkbox-input" type="checkbox"><span class="registration__checkbox-input-checkbox"></span>
+                </label>
+              </div>
+              <div class="registration__checkbox-wr">
+                <label class="registration__checkbox-label">Подписаться на материалы блога и анонсы интересных событий
+                  <input class="registration__checkbox-input" type="checkbox"><span class="registration__checkbox-input-checkbox"></span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
       <script src="static/js/libs.min.js"></script>
       <script src="static/js/main.js"></script>
     </div>

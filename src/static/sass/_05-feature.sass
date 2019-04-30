@@ -4,15 +4,15 @@
 	padding-bottom: 170px
 	margin: 0 0 -200px 0
 	z-index: 0
-	&:after
-		content: ''
-		position: absolute
-		bottom: 0
-		left: calc(50% - 600px)
-		width: 1200px
-		height: 1200px
-		background-color: #171717
-		border-radius: 100%
+	// &:after
+	// 	content: ''
+	// 	position: absolute
+	// 	bottom: 0
+	// 	left: calc(50% - 600px)
+	// 	width: 1200px
+	// 	height: 1200px
+	// 	background-color: #171717
+	// 	border-radius: 100%
 
 	&__img
 		position: absolute
@@ -26,6 +26,12 @@
 		background-size: cover
 		@media (min-width: 673px)
 			background-size: contain
+		@media (min-width: 1024px)
+			background-image: url(../img/neo-big.png)
+			height: 982px
+			background-size: cover
+		@media (min-width: 1450px)
+			background-size: contain
 	&__title
 		position: relative
 		display: block
@@ -37,6 +43,13 @@
 		@media (min-width: 350px)
 			font-size: 56px
 			margin: 0 0 93px 0
+		@media (min-width: 1024px)
+			font-size: 96px
+			line-height: 96px
+			text-align: center
+			letter-spacing: 4px
+			margin: 220px auto 340px auto
+			width: 840px
 
 .features
 	position: relative
@@ -47,12 +60,25 @@
 	z-index: 1
 	@media (min-width: 350px)
 		padding: 0 0 0 0
+	@media (min-width: 1024px)
+		padding: 0 0 140px 0
+	@media (min-width: 1440px)
+		justify-content: space-between
+		width: 1120px
+		margin: 0 auto
 	&__block
 		position: relative
 		width: 100%
 		margin: 0 0 46px 0
+		@media (min-width: 1024px)
+			width: 50%
+		@media (min-width: 1440px)
+			width: 48%
+			margin-bottom: 95px
 		&-du
 			margin: 0 0 31px 0
+			@media (min-width: 1440px)
+				margin-bottom: 91px
 	&__img
 		margin: 0 0 11px 0
 		&-du
@@ -63,6 +89,9 @@
 		line-height: 32px
 		letter-spacing: 0.02em
 		margin: 0 0 19px 0
+		@media (min-width: 1024px)
+			font-size: 40px
+			line-height: 48px
 		&-custom
 			position: relative
 			font-family: SignPainter, sans-serif
@@ -104,6 +133,9 @@
 		line-height: 32px
 		letter-spacing: 0.02em
 		color: #8B8B8B
+		@media (min-width: 1024px)
+			font-size: 18px
+			line-height: 40px
 		&-custom
 			font-family: Museo Sans Cyrl, sans-serif
 			font-size: 24px
@@ -111,6 +143,8 @@
 			text-align: center
 			letter-spacing: 0.02em
 			color: #FFFFFF
+			@media (min-width: 1440px)
+				padding: 0 20px
 
 .hr
 	width: 200%

@@ -10,10 +10,27 @@
 		color: #343235
 		margin: 0 0 24px 0
 
-.companies-wr
+.companies
+	&-wr
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-around
 	margin: 0 0 24px 0
+	&__img
+		width: 43%
+		display: inline-block
+		margin: 10px
+		vertical-align: middle
 	& img
-		margin: 20px 0
+
+#companies div.slick-list.draggable
+	position: relative
+	outline: none
+#companies div.pages__pre.slick-arrow
+	position: absolute
+	bottom: -40px
+	left: 30px
+#companies div.pages__next.slick-arrow
+	position: absolute
+	bottom: -40px
+	right: 30px

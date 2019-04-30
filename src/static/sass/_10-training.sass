@@ -8,10 +8,26 @@
 		letter-spacing: 4px
 		color: #343235
 		margin: 0 0 24px 0
+		@media (min-width: 1024px)
+			font-size: 72px
+			line-height: 72px
+			width: 440px
+			margin: 0 auto 50px
 
 .package
+	&-wrapper
+		@media (min-width: 1024px)
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
 	&-wr
 		padding: 0 0 100px 0
+		@media (min-width: 1024px)
+			width: 50%
+		@media (min-width: 1440px)
+			width: 33%
+			justify-content: space-between
+
 	&-card
 		text-align: center
 		&__title
@@ -84,10 +100,24 @@
 
 .training-info
 	text-align: center
+	@media (min-width: 1024px)
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
 	&__card
 		margin: 0 0 32px 0
+		@media (min-width: 1024px)
+			width: 30%
+		@media (min-width: 1440px)
+			width: 21%
 	&-img
 		margin: 0 0 19px 0
+		@media (min-width: 1024px)
+			min-height: 101px
+			display: flex
+			& img
+				display: block
+				margin: auto auto 0 0
 	&-title
 		font-family: Museo Sans Cyrl, sans-serif
 		font-size: 24px
@@ -96,6 +126,8 @@
 		letter-spacing: 0.02em
 		color: #343235
 		margin: 0 0 16px 0
+		@media (min-width: 1024px)
+			text-align: left
 	&-text
 		font-family: Museo Sans Cyrl, sans-serif
 		font-size: 16px
@@ -103,3 +135,5 @@
 		text-align: center
 		letter-spacing: 0.02em
 		color: #8B8B8B
+		@media (min-width: 1024px)
+			text-align: left

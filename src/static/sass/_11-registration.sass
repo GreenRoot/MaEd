@@ -13,16 +13,31 @@
 		line-height: 32px
 		letter-spacing: 0.02em
 		color: #FFFFFF
+		@media (min-width: 1024px)
+			font-size: 40px
+			line-height: 48px
+			width: 100%
+			order: -3
 
 .registration //Поля ввода данных
 	margin: 0 -37.5px
+	@media (min-width: 1024px)
+		display: flex
+		flex-wrap: wrap
+	@media (min-width: 1440px)
+		padding: 24px 28px 24px 75px
 	&__label-wr
 		position: relative
 		padding: 10px
 		margin: 0 0 24px 0
 		height: 92px
+		@media (min-width: 1024px)
+			width: 22.9%
+			order: -2
 		&:nth-child(5)
 			margin: 0 0 40px 0
+			@media (min-width: 1024px)
+				margin: 0 0 24px 0
 	&__label
 		position: absolute
 		top: 0
@@ -52,15 +67,32 @@
 				border: 2px solid #FED033
 			&:invalid
 				border: 2px solid #F03A2B
+			@media (min-width: 1024px)
+				width: 230px
+			@media (min-width: 1440px)
+				width: 300px
 
 .registration //чекбоксы
+	@media (min-width: 1440px)
+		max-width: 1280px
+		margin: 0 auto
 	&__checkbox
 		padding: 37px 0 30px
+		@media (min-width: 1024px)
+			width: 60%
+			order: -1
+			display: flex
+			flex-wrap: wrap
+			padding: 0
+		@media (min-width: 1440px)
+			width: 50%
 		&-wr
 			position: relative
 			width: 250px
 			margin: 0 0 18px 0
 			padding: 0 0 0 42px
+			@media (min-width: 1024px)
+				width: 41%
 		&-label
 			font-family: Museo Sans Cyrl, sans-serif
 			font-size: 12px
@@ -82,6 +114,12 @@
 				width: 24px
 				height: 24px
 				background-image: url(../img/checkbox-off.svg)
+
+.registration__botton
+	@media (min-width: 1024px)
+		max-height: 80px
+	@media (min-width: 1440px)
+		padding: 30px 150px 28px 150px
 
 //сложная магия с чекбоксами
 .registration__checkbox-input:checked + .registration__checkbox-input-checkbox

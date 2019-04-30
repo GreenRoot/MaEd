@@ -12,10 +12,33 @@
 		@media (min-width: 425px)
 			font-size: 56px
 
+.cource-info-wrapper
+	position: relative
+	display: flex
+	justify-content: center
+	flex-direction: column
+	flex-wrap: wrap
+	max-width: 1440px
+	margin: 0 auto
+	z-index: 2
+	@media (min-width: 1024px)
+		flex-direction: row
 .cource-info
+	@media (min-width: 1024px)
+		width: 50%
+	@media (min-width: 1336px)
+		width: 25%
+		&:nth-child(1)
+			margin-top: -50px
+		&:nth-child(4)
+			margin-top: -50px
+		width: 260px
+		margin: 0 30px
 	&-block
 		padding: 20px 0
 		text-align: center
+		@media (min-width: 1336px)
+			text-align: left
 		& img
 			margin: 0 0 -30px 0
 		&__title
@@ -24,6 +47,9 @@
 			line-height: 40px
 			text-align: center
 			color: #343235
+			@media (min-width: 1336px)
+				text-align: left
+				padding: 0 15px
 		&__text
 			font-family: Museo Sans Cyrl, sans-serif
 			font-size: 16px
@@ -34,19 +60,135 @@
 			width: 259px
 			padding: 0 15px
 			margin: 0 auto
+			@media (min-width: 1336px)
+				text-align: left
+
+.course-for-big-slider
+	display: none
+	@media (min-width: 1336px)
+		display: flex
+		justify-content: center
+		flex-direction: column
+		max-width: 1150px
+		margin: 0 auto
+
+.course-for-big-slider__mini // Миниатюры большого слайдера
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 150px
+	margin-bottom: -250px
+	z-index: 2
+.mini-block
+	display: flex
+	flex-direction: column
+	width: 120px
+	margin: 0 26px
+	&:nth-child(2)
+		margin-right: auto //Раздвинули по два блока в края
+	&:nth-child(2)
+		margin-top: -100px
+	&:nth-child(3)
+		margin-top: -100px
+	&__img
+		display: flex
+		justify-content: center
+		flex-wrap: flex-end
+		height: 120px
+		border-radius: 0 0 500em 500em
+.mini-block //text
+		font-family: Museo Sans Cyrl, sans-serif
+		font-size: 16px
+		line-height: 24px
+		text-align: center
+		letter-spacing: 0.02em
+		color: #8B8B8B
+		cursor: pointer
+		transition: 0.4s
+		&:hover
+			text-decoration-line: underline
+			color: #F03A2B
+
+.course-for-big-slider__maxi // Большой слайдер
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	&:after
+		content: ''
+		position: absolute
+		top: calc(50% - 526px)
+		left: calc(50% - 656px)
+		width: 1312px
+		height: 1312px
+		border-radius: 50%
+		background-color: #f2f2f2
+	&:before
+		content: ''
+		position: absolute
+		top: calc(50% - 362px)
+		left: calc(50% - 492px)
+		width: 992px
+		height: 992px
+		border-radius: 50%
+		background-color: #fff
+		z-index: 1
+.maxi-block
+	position: relative
+	z-index: 2
+	&__img
+		position: relative
+		display: flex
+		justify-content: center
+		flex-wrap: flex-end
+		// height: 120px
+		width: 640px
+		overflow: hidden
+		border-radius: 0 0 500em 500em
+		& img
+				position: relative
+		&:before
+			content: ''
+			position: absolute
+			bottom: -2px
+			left: calc(50% - 320px)
+			width: 640px
+			height: 640px
+			border-radius: 50%
+			background-color: #f2f2f2
 
 .slider-course-for
-	font-family: Museo Sans Cyrl, sans-serif
-	font-size: 24px
-	text-align: center
-	color: #F03A2B
+	&__list
+		font-family: Museo Sans Cyrl, sans-serif
+		font-size: 24px
+		text-align: center
+		color: #F03A2B
+		@media (min-width: 1336px)
+			display: none
+	&__wrapper
+		margin: 0 0 50px 0
+		@media (min-width: 1336px)
+			display: none
 	&__img-wr
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
 		position: relative
 		text-align: center
 		margin: 0 0 21px 0
+	&__img
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		overflow: hidden
+		width: 224px
+		height: 418px
+		border-radius: 0 0 500em 500em
 		& img
 			position: relative
 			z-index: 1
+			object-fit: contain
 	&__title
 		position: relative
 		font-family: SignPainter, sans-serif
@@ -104,3 +246,15 @@
 		text-decoration-line: underline
 		color: #BEBEBE
 		padding: 0 10px
+
+#sliderCourse div.slick-list.draggable
+	position: relative
+	outline: none
+#sliderCourse div.pages__pre.slick-arrow
+	position: absolute
+	bottom: -40px
+	left: 30px
+#sliderCourse div.pages__next.slick-arrow
+	position: absolute
+	bottom: -40px
+	right: 30px

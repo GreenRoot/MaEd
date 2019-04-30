@@ -2,6 +2,10 @@
 	background-color: #fff
 	padding: 60px 30px 0 30px
 	text-align: center
+	@media (min-width: 1024px)
+		padding: 120px 30px 70px 30px
+	@media (min-width: 1440px)
+		padding: 120px 30px 350px 30px
 	&__title
 		width: 320px
 		font-family: Bebas Neue, sans-serif
@@ -9,6 +13,18 @@
 		letter-spacing: 4px
 		color: #343235
 		text-align: left
+		@media (min-width: 1024px)
+			font-size: 96px
+			line-height: 96px
+			text-align: center
+			width: auto
+			margin: 0 0 100px 0
+
+.reasons-slider
+	position: relative
+	display: flex
+	flex-direction: column
+.reasons
 	&__subtitle
 		font-family: Museo Sans Cyrl, sans-serif
 		font-size: 20px
@@ -16,6 +32,27 @@
 		letter-spacing: 0.02em
 		color: #F03A2B
 		text-align: left
+		@media (min-width: 1024px)
+			font-family: Bebas Neue, sans-serif
+			font-size: 32px
+			line-height: 40px
+			text-align: center
+			letter-spacing: 2px
+			color: #343235
+			width: 590px
+			margin: 0 auto 80px
+	&__img
+		width: 350px
+		object-fit: cover
+		& img
+			width: 100%	
+		@media (min-width: 1024px)
+			position: absolute
+			top: 144px
+			right: 0
+			width: 440px
+		@media (min-width: 1440px)
+			width: 800px
 	&__text
 		font-size: 16px
 		font-family: Museo Sans Cyrl, sans-serif
@@ -24,10 +61,12 @@
 		letter-spacing: 0.02em
 		color: #343235
 		text-align: left
-
-.slider-reasons
-	&__wr
-	&__title
+		@media (min-width: 1024px)
+			width: 517px
+			font-size: 20px
+			line-height: 40px
+			margin: 0 0 75px 0
+	&__minus
 		font-family: Bebas Neue, sans-serif
 		font-weight: bold
 		text-align: left
@@ -35,14 +74,18 @@
 		letter-spacing: 2px
 		color: #F03A2B
 		margin: 0 0 25px 0
-	&__text
-		font-family: Museo Sans Cyrl, sans-serif
-		font-size: 16px
-		line-height: 32px
-		letter-spacing: 0.02em
-		text-align: left
-		color: #8B8B8B
-		margin: 0 0 30px 0
+		@media (min-width: 1024px)
+			width: 517px
+		&-text
+			font-family: Museo Sans Cyrl, sans-serif
+			font-size: 16px
+			line-height: 32px
+			letter-spacing: 0.02em
+			text-align: left
+			color: #8B8B8B
+			margin: 0 0 30px 0
+			@media (min-width: 1024px)
+				width: 410px
 
 .pages
 	display: flex
@@ -111,3 +154,12 @@
 			color: #343235
 			@media (min-width: 370px)
 				font-size: 40px
+
+.reasons-pages
+	@media (min-width: 1024px)
+		display: none
+.reasons-button
+	display: none
+	@media (min-width: 1024px)
+		display: inline-block
+		width: 352px

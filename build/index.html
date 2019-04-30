@@ -2,10 +2,11 @@
 <html lang="ru-RU">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=425px, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="theme-color" content="#171717">
     <link rel="stylesheet" href="static/css/slick.css">
-    <link rel="stylesheet" href="static/css/main.css?v.0.0.17">
+    <link rel="stylesheet" href="static/css/slick-theme.css"><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="static/css/main.css?v.0.0.21">
     <title>MaEd</title>
   </head>
   <body>
@@ -41,18 +42,18 @@
       <!-- --------------feature----------------->
       <section class="feature">
         <div class="feature__img"></div>
-        <div class="container">
+        <div class="container container-test-1024 container-test-1440">
           <h2 class="feature__title">Чем этот курс отличается от других?</h2>
           <div class="features">
-            <div class="features__block"><img class="features__img" src="static/img/steps.png" alt="Ступеньки">
+            <div class="features__block"><img class="features__img" src="static/img/steps.png" alt="Ступеньки" data-aos="fade-up">
               <h3 class="features__title">Системная подача информации</h3>
               <p class="features__text">Учим объединять инструменты интернет- маркетинга в систему, где каждый инструмент дополняет другой и нацелен на решение задач бизнеса. Отдельные метрики: конверсии, CTR, открытия писем&nbsp;—&nbsp;не наш приоритет</p>
             </div>
-            <div class="features__block features__block-du"><img class="features__img features__img-du" src="static/img/digital-strategy.png" alt="Стратегия">
+            <div class="features__block features__block-du"><img class="features__img features__img-du" src="static/img/digital-strategy.png" alt="Стратегия" data-aos="fade-up">
               <h3 class="features__title">Резлуьтат – готовая digital&#8209;стратегия</h3>
               <p class="features__text">Урок за уроком вы будете применять различные инструменты и создадите стратегию digital-маркетинга для вашего проекта на 2019 год. Это готовый план действий, который можно внедрить сразу после курса</p>
             </div>
-            <div class="features__block"><img class="features__img" src="static/img/keyboard.png" alt="Практика">
+            <div class="features__block"><img class="features__img" src="static/img/keyboard.png" alt="Практика" data-aos="fade-up">
               <h3 class="features__title">Практика во&nbsp; время&nbsp;обучения</h3>
               <p class="features__text">Вы сегментируете целевую аудиторию, проведете конкурентный анализ, подберете поисковые запросы, составите требования для контекстной рекламы, разработаете стратегию контент-маркетинга, email-маркетинга и т.д.</p>
             </div>
@@ -68,67 +69,109 @@
         <h2 class="course-for__title">Для кого курс</h2>
         <div class="slider-course-for">
           <div class="slider-course-for__list"><span id="sliderList">1</span> из 4</div>
-          <div class="slider-course-for__img-wr"><img src="static/img/vader.png" alt="Вейдер">
-            <h3 class="slider-course-for__title"><span>Г</span>енеральный директор</h3>
-            <p class="slider-course-for__text">Владелец бизнеса</p>
-            <div class="slider-course-for__circle"></div>
-            <div class="slider-course-for__pages">
-              <div class="pages">
-                <div class="pages__pre">предыдущий</div>
-                <div class="pages__num">1</div>
-                <div class="pages__num-from">/4</div>
-                <div class="pages__next">следующий</div>
+          <div class="slider-course-for__wrapper" id="sliderCourse">
+            <div class="slider-course-for__img-wr">
+              <div class="slider-course-for__img"><img src="static/img/r2d2.png" alt="r2d2"></div>
+              <h3 class="slider-course-for__title"><span>К</span>оммерческий директор</h3>
+              <p class="slider-course-for__text">Работник</p>
+              <div class="slider-course-for__circle"></div>
+            </div>
+            <div class="slider-course-for__img-wr">
+              <div class="slider-course-for__img"><img src="static/img/vader.png" alt="Вейдер"></div>
+              <h3 class="slider-course-for__title"><span>Г</span>енеральный директор</h3>
+              <p class="slider-course-for__text">Владелец бизнеса</p>
+              <div class="slider-course-for__circle"></div>
+            </div>
+            <div class="slider-course-for__img-wr">
+              <div class="slider-course-for__img"><img src="static/img/chubaka.png" alt="Вейдер"></div>
+              <h3 class="slider-course-for__title"><span>Д</span>иректор по маркетингу</h3>
+              <p class="slider-course-for__text">Работник</p>
+              <div class="slider-course-for__circle"></div>
+            </div>
+            <div class="slider-course-for__img-wr">
+              <div class="slider-course-for__img"><img src="static/img/c3po.png" alt="C3PO"></div>
+              <h3 class="slider-course-for__title"><span>М</span>енеджер по маркетингу</h3>
+              <p class="slider-course-for__text">Работник</p>
+              <div class="slider-course-for__circle"></div>
+            </div>
+          </div>
+          <div class="course-for-big-slider">
+            <div class="course-for-big-slider__mini">
+              <div class="mini-block">
+                <div class="mini-block__img"><img src="static/img/chubaka-mini.png" alt="Чубака"></div>
+                <div class="mini-block__text">Директор по маркетингу</div>
+              </div>
+              <div class="mini-block">
+                <div class="mini-block__img"><img src="static/img/c3po-mini.png" alt="c3po"></div>
+                <div class="mini-block__text">Директор по маркетингу</div>
+              </div>
+              <div class="mini-block">
+                <div class="mini-block__img"><img src="static/img/r2d2-mini.png" alt="r2d2"></div>
+                <div class="mini-block__text">Директор по маркетингу</div>
+              </div>
+              <div class="mini-block">
+                <div class="mini-block__img"><img src="static/img/vader-mini.png" alt="Вейдер"></div>
+                <div class="mini-block__text">Директор по маркетингу</div>
+              </div>
+            </div>
+            <div class="course-for-big-slider__maxi">
+              <div class="maxi-block">
+                <div class="maxi-block__img"><img src="static/img/vader-big.png" alt="Вейдер"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="cource-info">
-          <div class="cource-info-block"><img src="static/img/glasses.png" alt="Очки">
-            <h3 class="cource-info-block__title">100% контроль</h3>
-            <p class="cource-info-block__text">Любых интернет-агетств и подрядчиков</p>
+        <div class="cource-info-wrapper">
+          <div class="cource-info">
+            <div class="cource-info-block" data-aos="fade-up"><img src="static/img/glasses.png" alt="Очки">
+              <h3 class="cource-info-block__title">100% контроль</h3>
+              <p class="cource-info-block__text">Любых интернет-агетств и подрядчиков</p>
+            </div>
           </div>
-        </div>
-        <div class="cource-info">
-          <div class="cource-info-block"><img src="static/img/kompas.png" alt="Компасс">
-            <h3 class="cource-info-block__title">Стратегия</h3>
-            <p class="cource-info-block__text">Готовая стратегия электронного маркетинга на 6-12 месяцев</p>
+          <div class="cource-info">
+            <div class="cource-info-block" data-aos="fade-up"><img src="static/img/kompas.png" alt="Компасс">
+              <h3 class="cource-info-block__title">Стратегия</h3>
+              <p class="cource-info-block__text">Готовая стратегия электронного маркетинга на 6-12 месяцев</p>
+            </div>
           </div>
-        </div>
-        <div class="cource-info">
-          <div class="cource-info-block"><img src="static/img/rubik.png" alt="Кубик Рубика">
-            <h3 class="cource-info-block__title">Аналитика</h3>
-            <p class="cource-info-block__text">Аналитика «до денег» — то, что ждет от вас руководство</p>
+          <div class="cource-info">
+            <div class="cource-info-block" data-aos="fade-up"><img src="static/img/rubik.png" alt="Кубик Рубика">
+              <h3 class="cource-info-block__title">Аналитика</h3>
+              <p class="cource-info-block__text">Аналитика «до денег» — то, что ждет от вас руководство</p>
+            </div>
           </div>
-        </div>
-        <div class="cource-info">
-          <div class="cource-info-block"><img src="static/img/plan.png" alt="Схема">
-            <h3 class="cource-info-block__title">Ясность</h3>
-            <p class="cource-info-block__text">Расскажем, как выстроить отдел интернет-маркетинга внутри компании</p>
+          <div class="cource-info">
+            <div class="cource-info-block" data-aos="fade-up"><img src="static/img/plan.png" alt="Схема">
+              <h3 class="cource-info-block__title">Ясность</h3>
+              <p class="cource-info-block__text">Расскажем, как выстроить отдел интернет-маркетинга внутри компании</p>
+            </div>
           </div>
         </div>
       </section>
       <!-- --------------reasons----------------->
       <section class="reasons">
-        <div class="container">
+        <div class="container container-test-1024 container-test-1440">
           <h2 class="reasons__title">8 Причин пройти курс</h2>
-          <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p><img src="static/img/borsh.png" alt="Борщ">
-          <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
-          <div class="slider-reasons__wr">
-            <h2 class="slider-reasons__title">Минусы дорогих курсов:</h2>
-            <p class="slider-reasons__text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p>
-            <div class="pages">
-              <div class="pages__pre">предыдущий</div>
-              <div class="pages__num">1</div>
-              <div class="pages__num-from">/8</div>
-              <div class="pages__next">следующий</div>
-            </div>
+          <div class="reasons-slider">
+            <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
+            <div class="reasons__img"><img src="static/img/borsh.jpg" alt="Борщ"></div>
+            <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
+            <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
+            <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+          </div>
+          <div class="pages reasons-pages">
+            <div class="pages__pre">предыдущий</div>
+            <div class="pages__num">1</div>
+            <div class="pages__num-from">/8</div>
+            <div class="pages__next">следующий</div>
           </div>
         </div>
       </section>
       <!-- --------------specialists------------->
       <section class="specialists">
-        <div class="container">
-          <h3 class="specialists__title">Курс проводят специалисты маркетинговой группы <span>«Комплето»</span></h3><img class="specialists__img" src="static/img/completo-peoples-small.png" alt="Специалисты группы Комплето">
+        <div class="container container-test-1024">
+          <h3 class="specialists__title">Курс проводят специалисты маркетинговой группы <span>«Комплето»</span></h3>
+          <div class="specialists__img"><img class="specialists__img" src="static/img/completo-peoples-small.jpg" alt="Специалисты группы Комплето"></div>
         </div>
       </section>
       <!-- --------------teachers---------------->
@@ -151,10 +194,10 @@
           <div class="teachers-slider">
             <div class="teachers-slider__mini-images">
               <div class="mini-image01"><img src="static/img/avatar-andrey-gavrikov2.png" alt="Андрей Гавриков"></div>
-              <div class="mini-image01"><img src="static/img/avatar-andrey-gavrikov2.png" alt="Андрей Гавриков"></div>
-              <div class="mini-image01"><img src="static/img/avatar-andrey-gavrikov2.png" alt="Андрей Гавриков"></div>
-              <div class="mini-image01"><img src="static/img/avatar-andrey-gavrikov2.png" alt="Андрей Гавриков"></div>
-              <div class="mini-image01"><img src="static/img/avatar-andrey-gavrikov2.png" alt="Андрей Гавриков"></div>
+              <div class="mini-image01"><img src="static/img/avatar-vladimir-davydov3.png" alt="Андрей Гавриков"></div>
+              <div class="mini-image01"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Андрей Гавриков"></div>
+              <div class="mini-image01"><img src="static/img/dmitry-fedorov3.png" alt="Андрей Гавриков"></div>
+              <div class="mini-image01"><img src="static/img/dmitry-fedorov3.png" alt="Андрей Гавриков"></div>
             </div>
             <div class="teachers-slider__full-info" id="slider01">
               <div class="full-info01">
@@ -223,42 +266,44 @@
       </section>
       <!-- --------------training-packages------->
       <section class="training">
-        <div class="container">
+        <div class="container container-test-1024 container-test-1440">
           <h2 class="training__title">Выберите свой пакет&nbsp;обучения</h2>
-          <div class="package-wr">
-            <div class="package-card">
-              <h3 class="package-card__title">пакет</h3>
-              <h2 class="package-card__name">«<span>С</span>тратегия»</h2>
-              <div class="package-card__img-wr"><img src="static/img/box_strategy.png" alt="Пакет стратегия">
-                <div class="package-card__img-place">Мест осталось</div>
-                <p class="package-card__img-place-text">180/200</p>
+          <div class="package-wrapper">
+            <div class="package-wr">
+              <div class="package-card">
+                <h3 class="package-card__title">Пакет</h3>
+                <h2 class="package-card__name">«<span>С</span>тратегия»</h2>
+                <div class="package-card__img-wr"><img src="static/img/box_strategy.png" alt="Пакет стратегия">
+                  <div class="package-card__img-place">Мест осталось</div>
+                  <p class="package-card__img-place-text">180/200</p>
+                </div>
+                <h3 class="package-card__price">71 000 руб</h3>
+                <p class="package-card__price-text">От 6 256 рублей в месяц***</p><a class="package-card__info" href="#">Что входит в пакет</a>
               </div>
-              <h3 class="package-card__price">71 000 руб</h3>
-              <p class="package-card__price-text">От 6 256 рублей в месяц***</p><a class="package-card__info" href="#">Что входит в пакет</a>
             </div>
-          </div>
-          <div class="package-wr">
-            <div class="package-card">
-              <h3 class="package-card__title">пакет</h3>
-              <h2 class="package-card__name">«<span>С</span>тратегия»</h2>
-              <div class="package-card__img-wr"><img src="static/img/box_strategy.png" alt="Пакет стратегия">
-                <div class="package-card__img-place">Мест осталось</div>
-                <p class="package-card__img-place-text">180/200</p>
+            <div class="package-wr">
+              <div class="package-card">
+                <h3 class="package-card__title">Пакет</h3>
+                <h2 class="package-card__name">«<span>Т</span>ктика»</h2>
+                <div class="package-card__img-wr"><img src="static/img/box_tactic.png" alt="Пакет тактика">
+                  <div class="package-card__img-place">Мест осталось</div>
+                  <p class="package-card__img-place-text">180/200</p>
+                </div>
+                <h3 class="package-card__price">51 000 руб</h3>
+                <p class="package-card__price-text">От От 4 442 рублей в месяц***</p><a class="package-card__info" href="#">Что входит в пакет</a>
               </div>
-              <h3 class="package-card__price">71 000 руб</h3>
-              <p class="package-card__price-text">От 6 256 рублей в месяц***</p><a class="package-card__info" href="#">Что входит в пакет</a>
             </div>
-          </div>
-          <div class="package-wr">
-            <div class="package-card">
-              <h3 class="package-card__title">пакет</h3>
-              <h2 class="package-card__name">«<span>К</span>орпоративный»</h2>
-              <div class="package-card__img-wr"><img src="static/img/box_strategy.png" alt="Пакет стратегия">
-                <div class="package-card__img-place">Мест осталось</div>
-                <p class="package-card__img-place-text">180/200</p>
+            <div class="package-wr">
+              <div class="package-card">
+                <h3 class="package-card__title">Пакет</h3>
+                <h2 class="package-card__name">«<span>К</span>орпоративный»</h2>
+                <div class="package-card__img-wr"><img src="static/img/box_corp.png" alt="Пакет корпоративный">
+                  <div class="package-card__img-place">Мест осталось</div>
+                  <p class="package-card__img-place-text">180/200</p>
+                </div>
+                <h3 class="package-card__price">150 000 руб</h3>
+                <p class="package-card__price-text">TODO: короткий текст</p><a class="package-card__info" href="#">Что входит в пакет</a>
               </div>
-              <h3 class="package-card__price">150 000 руб</h3>
-              <p class="package-card__price-text">Зависит от количества часов, сотрудников и задач обучения</p><a class="package-card__info" href="#">Что входит в пакет</a>
             </div>
           </div>
           <div class="training-info">
@@ -282,7 +327,7 @@
       </section>
       <!-- --------------registration-form------->
       <div class="registration-wr">
-        <div class="container">
+        <div class="container container-test-1024 container-test-1440">
           <form class="registration" action="">
             <h2 class="registration__title">Регистрация</h2>
             <div class="registration__label-wr">
@@ -304,7 +349,7 @@
               <label class="registration__label">Промокод
                 <input class="registration__label-text" type="text" invalid>
               </label>
-            </div><a class="button" href="#">Зарегистрироваться</a>
+            </div><a class="button registration__botton" href="#">Зарегистрироваться</a>
             <div class="registration__checkbox">
               <div class="registration__checkbox-wr">
                 <label class="registration__checkbox-label">Согласен с условиями оферты и ознакомлен с правилами обработки персональных данных
@@ -357,54 +402,248 @@
       </section>
       <!-- --------------programm---------------->
       <section class="programm">
-        <div class="container">
+        <div class="container container-test-1024 container-test-1440">
           <h2 class="programm__title">Преподаватели</h2>
-          <div class="teacher-wr">
-            <h3 class="teacher__modul">Модуль 1</h3>
-            <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
-            <h3 class="teacher__name">Андрей Гавриков</h3>
-            <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
-            <div class="teacher__info">
-              <div class="teacher-theory">3.5 часа</div>
-              <div class="teacher-practice">2 часа</div>
-            </div><a class="teacher__button" href="">Подробнее</a>
+          <div class="moduls-wr" id="modulsWr">
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul">Модуль 1</h3>
+              <div class="teacher__img"><img src="static/img/avatar-andrey-gavrikov3.png" alt="Андрей Гавриков"></div>
+              <h3 class="teacher__name">Андрей Гавриков</h3>
+              <p class="teacher__text">Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
           </div>
-          <div class="pages">
+          <div class="pages programm__pages">
             <div class="pages__pre">предыдущий</div>
             <div class="pages__num">1</div>
             <div class="pages__num-from">/11</div>
             <div class="pages__next">следующий</div>
-          </div><a class="button mt40" href="#">Зарегистрироваться</a>
+          </div><a class="button mt40 programm__pages" href="#">Зарегистрироваться</a>
           <h3 class="strategy__subtitle">При покупке пакета</h3>
           <h2 class="strategy__title">«Стратегия»</h2>
-          <div class="teacher-wr">
-            <h3 class="teacher__modul teacher__modul-green">Модуль 13</h3>
-            <div class="teacher__img"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Михаил федоров"></div>
-            <h3 class="teacher__name">Михаил федоров</h3>
-            <p class="teacher__text">Digital-директор: разрабатываем стратегию digital-маркетинга</p>
-            <div class="teacher__info">
-              <div class="teacher-theory">3.5 часа</div>
-              <div class="teacher-practice">2 часа</div>
-            </div><a class="teacher__button" href="">Подробнее</a>
+          <div class="moduls-wr" id="modulsWr">
+            <div class="teacher-wr">
+              <h3 class="teacher__modul teacher__modul-green">Модуль 13</h3>
+              <div class="teacher__img"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Михаил федоров"></div>
+              <h3 class="teacher__name">Михаил федоров</h3>
+              <p class="teacher__text">Digital-директор: разрабатываем стратегию digital-маркетинга</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul teacher__modul-green">Модуль 13</h3>
+              <div class="teacher__img"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Михаил федоров"></div>
+              <h3 class="teacher__name">Михаил федоров</h3>
+              <p class="teacher__text">Digital-директор: разрабатываем стратегию digital-маркетинга</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul teacher__modul-green">Модуль 13</h3>
+              <div class="teacher__img"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Михаил федоров"></div>
+              <h3 class="teacher__name">Михаил федоров</h3>
+              <p class="teacher__text">Digital-директор: разрабатываем стратегию digital-маркетинга</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul teacher__modul-green">Модуль 13</h3>
+              <div class="teacher__img"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Михаил федоров"></div>
+              <h3 class="teacher__name">Михаил федоров</h3>
+              <p class="teacher__text">Digital-директор: разрабатываем стратегию digital-маркетинга</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul teacher__modul-green">Модуль 13</h3>
+              <div class="teacher__img"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Михаил федоров"></div>
+              <h3 class="teacher__name">Михаил федоров</h3>
+              <p class="teacher__text">Digital-директор: разрабатываем стратегию digital-маркетинга</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul teacher__modul-green">Модуль 13</h3>
+              <div class="teacher__img"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Михаил федоров"></div>
+              <h3 class="teacher__name">Михаил федоров</h3>
+              <p class="teacher__text">Digital-директор: разрабатываем стратегию digital-маркетинга</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
+            <div class="teacher-wr">
+              <h3 class="teacher__modul teacher__modul-green">Модуль 13</h3>
+              <div class="teacher__img"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Михаил федоров"></div>
+              <h3 class="teacher__name">Михаил федоров</h3>
+              <p class="teacher__text">Digital-директор: разрабатываем стратегию digital-маркетинга</p>
+              <div class="teacher__info">
+                <div class="teacher-theory">3.5 часа</div>
+                <div class="teacher-practice">2 часа</div>
+              </div><a class="teacher__button" href="">Подробнее</a>
+            </div>
           </div>
-          <div class="pages">
+          <div class="pages programm__pages">
             <div class="pages__pre">предыдущий</div>
             <div class="pages__num">1</div>
             <div class="pages__num-from">/4</div>
             <div class="pages__next">следующий</div>
-          </div><a class="button mt40" href="#">Зарегистрироваться</a>
+          </div><a class="button mt40 programm__pages" href="#">Зарегистрироваться</a>
         </div>
       </section>
       <!-- --------------projects---------------->
       <section class="projects">
         <div class="container">
           <h2 class="projects__title">Программа разработана на основе проектов для&nbsp;наших клиентов</h2>
-          <div class="companies-wr"><img src="static/img/company-alta.png" alt="alta"><img src="static/img/company-severstal.png" alt="alta"><img src="static/img/company-ucg.png" alt="alta"><img src="static/img/company-torex.png" alt="alta"><img src="static/img/company-sxz.png" alt="alta"><img src="static/img/company-megaflex.png" alt="alta"><img src="static/img/company-edimdoma.png" alt="alta"><img src="static/img/company-bestklinik.png" alt="alta"><img src="static/img/company-obeh.png" alt="alta"><img src="static/img/company-velux.png" alt="alta"></div>
-          <div class="pages">
-            <div class="pages__pre">предыдущий</div>
-            <div class="pages__num">1</div>
-            <div class="pages__num-from">/3</div>
-            <div class="pages__next">следующий</div>
+          <div class="companies-wrapper" id="companies">
+            <div class="companies-wr">
+              <div class="companies__img"><img src="static/img/company-alta.png" alt="alta"></div>
+              <div class="companies__img"><img src="static/img/company-severstal.png" alt="alta"></div>
+              <div class="companies__img"><img src="static/img/company-ucg.png" alt="alta"></div>
+              <div class="companies__img"><img src="static/img/company-torex.png" alt="alta"></div>
+              <div class="companies__img"><img src="static/img/company-sxz.png" alt="alta"></div>
+              <div class="companies__img"><img src="static/img/company-megaflex.png" alt="alta"></div>
+              <div class="companies__img"><img src="static/img/company-edimdoma.png" alt="alta"></div>
+              <div class="companies__img"><img src="static/img/company-bestklinik.png" alt="alta"></div>
+              <div class="companies__img"><img src="static/img/company-obeh.png" alt="alta"></div>
+              <div class="companies__img"><img src="static/img/company-velux.png" alt="alta"></div>
+            </div>
+            <div class="companies-wr">
+              <div class="companies__img"><img src="static/img/ochakovsky.png" alt="ochakovsky"></div>
+              <div class="companies__img"><img src="static/img/lafarge.png" alt="lafarge"></div>
+              <div class="companies__img"><img src="static/img/komek.png" alt="komek"></div>
+              <div class="companies__img"><img src="static/img/beeline.png" alt="beeline"></div>
+              <div class="companies__img"><img src="static/img/konfael.png" alt="konfael"></div>
+              <div class="companies__img"><img src="static/img/lapino.png" alt="lapino"></div>
+              <div class="companies__img"><img src="static/img/mariya.png" alt="mariya"></div>
+              <div class="companies__img"><img src="static/img/buldors.png" alt="buldors"></div>
+              <div class="companies__img"><img src="static/img/favorite.png" alt="favorite"></div>
+            </div>
+            <div class="companies-wr">
+              <div class="companies__img"><img src="static/img/interflora.png" alt="interflora"></div>
+              <div class="companies__img"><img src="static/img/kant.png" alt="kant"></div>
+              <div class="companies__img"><img src="static/img/aristo.png" alt="aristo"></div>
+              <div class="companies__img"><img src="static/img/hartman.png" alt="hartman"></div>
+              <div class="companies__img"><img src="static/img/speco.png" alt="speco"></div>
+              <div class="companies__img"><img src="static/img/mother.png" alt="mother"></div>
+              <div class="companies__img"><img src="static/img/fitnes.png" alt="fitnes"></div>
+              <div class="companies__img"><img src="static/img/dataline.png" alt="dataline"></div>
+              <div class="companies__img"><img src="static/img/unipharm.png" alt="unipharm"></div>
+              <div class="companies__img"><img src="static/img/gazpromliz.png" alt="gazpromliz"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -494,7 +733,7 @@
       </section>
       <!-- --------------registration-form------->
       <div class="registration-wr">
-        <div class="container">
+        <div class="container container-test-1024 container-test-1440">
           <form class="registration" action="">
             <h2 class="registration__title">Регистрация</h2>
             <div class="registration__label-wr">
@@ -607,7 +846,7 @@
       </section>
       <!-- --------------footer------------------>
       <div class="registration-wr">
-        <div class="container">
+        <div class="container container-test-1024 container-test-1440">
           <form class="registration" action="">
             <h2 class="registration__title">Подать заявку на корпортивное обучение</h2>
             <div class="registration__label-wr">
@@ -644,9 +883,9 @@
             </div>
           </form>
         </div>
-      </div>
+      </div><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script src="static/js/libs.min.js"></script>
-      <script src="static/js/main.js"></script>
+      <script src="static/js/main.js"></script><script>AOS.init({duration: 600});</script>
     </div>
   </body>
 </html>

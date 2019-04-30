@@ -2,10 +2,13 @@ doctype html
 html(lang="ru-RU")
 	head
 		meta(charset="UTF-8")
-		meta(name="viewport" content="width=425px, user-scalable=no")
+		meta(name="viewport" content="width=device-width, user-scalable=no")
 		meta(name="theme-color" content="#171717")
 		link(rel="stylesheet", href="static/css/slick.css")
-		link(rel="stylesheet", href="static/css/main.css?v.0.0.17")
+		link(rel="stylesheet", href="static/css/slick-theme.css")
+		//- link(rel="stylesheet", href="https://unpkg.com/aos@2.3.1/dist/aos.css")
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		link(rel="stylesheet", href="static/css/main.css?v.0.0.21")
 		title MaEd
 	body
 		.main-wr
@@ -48,19 +51,19 @@ html(lang="ru-RU")
 			// --------------feature---------------
 			section.feature
 				.feature__img
-				.container
+				.container.container-test-1024.container-test-1440
 					h2.feature__title Чем этот курс отличается от других?
 					.features
 						.features__block
-							img.features__img(src="static/img/steps.png", alt="Ступеньки")
+							img.features__img(src="static/img/steps.png", alt="Ступеньки" data-aos="fade-up")
 							h3.features__title Системная подача информации
 							p.features__text Учим объединять инструменты интернет- маркетинга в систему, где каждый инструмент дополняет другой и нацелен на решение задач бизнеса. Отдельные метрики: конверсии, CTR, открытия писем&nbsp;—&nbsp;не наш приоритет
 						.features__block.features__block-du
-							img.features__img.features__img-du(src="static/img/digital-strategy.png", alt="Стратегия")
+							img.features__img.features__img-du(src="static/img/digital-strategy.png", alt="Стратегия" data-aos="fade-up")
 							h3.features__title Резлуьтат – готовая digital&#8209;стратегия
 							p.features__text Урок за уроком вы будете применять различные инструменты и создадите стратегию digital-маркетинга для вашего проекта на 2019 год. Это готовый план действий, который можно внедрить сразу после курса
 						.features__block
-							img.features__img(src="static/img/keyboard.png", alt="Практика")
+							img.features__img(src="static/img/keyboard.png", alt="Практика" data-aos="fade-up")
 							h3.features__title Практика во&nbsp; время&nbsp;обучения
 							p.features__text Вы сегментируете целевую аудиторию, проведете конкурентный анализ, подберете поисковые запросы, составите требования для контекстной рекламы, разработаете стратегию контент-маркетинга, email-маркетинга и т.д.
 						.features__block
@@ -74,58 +77,104 @@ html(lang="ru-RU")
 				h2.course-for__title Для кого курс
 				.slider-course-for
 					.slider-course-for__list <span id="sliderList">1</span> из 4
-					.slider-course-for__img-wr
-						img(src="static/img/vader.png", alt="Вейдер")
-						h3.slider-course-for__title <span>Г</span>енеральный директор
-						p.slider-course-for__text Владелец бизнеса
-						.slider-course-for__circle
-						.slider-course-for__pages
-							.pages
-								.pages__pre предыдущий
-								.pages__num 1
-								.pages__num-from /4
-								.pages__next следующий
-				.cource-info
-					.cource-info-block
-						img(src="static/img/glasses.png", alt="Очки")
-						h3.cource-info-block__title 100% контроль
-						p.cource-info-block__text Любых интернет-агетств и подрядчиков
-				.cource-info
-					.cource-info-block
-						img(src="static/img/kompas.png", alt="Компасс")
-						h3.cource-info-block__title Стратегия
-						p.cource-info-block__text Готовая стратегия электронного маркетинга на 6-12 месяцев
-				.cource-info
-					.cource-info-block
-						img(src="static/img/rubik.png", alt="Кубик Рубика")
-						h3.cource-info-block__title Аналитика
-						p.cource-info-block__text Аналитика «до денег» — то, что ждет от вас руководство
-				.cource-info
-					.cource-info-block
-						img(src="static/img/plan.png", alt="Схема")
-						h3.cource-info-block__title Ясность
-						p.cource-info-block__text Расскажем, как выстроить отдел интернет-маркетинга внутри компании
+					.slider-course-for__wrapper#sliderCourse
+						.slider-course-for__img-wr
+							.slider-course-for__img
+								img(src="static/img/r2d2.png", alt="r2d2")
+							h3.slider-course-for__title <span>К</span>оммерческий директор
+							p.slider-course-for__text Работник
+							.slider-course-for__circle
+						.slider-course-for__img-wr
+							.slider-course-for__img
+								img(src="static/img/vader.png", alt="Вейдер")
+							h3.slider-course-for__title <span>Г</span>енеральный директор
+							p.slider-course-for__text Владелец бизнеса
+							.slider-course-for__circle
+						.slider-course-for__img-wr
+							.slider-course-for__img
+								img(src="static/img/chubaka.png", alt="Вейдер")
+							h3.slider-course-for__title <span>Д</span>иректор по маркетингу
+							p.slider-course-for__text Работник
+							.slider-course-for__circle
+						.slider-course-for__img-wr
+							.slider-course-for__img
+								img(src="static/img/c3po.png", alt="C3PO")
+							h3.slider-course-for__title <span>М</span>енеджер по маркетингу
+							p.slider-course-for__text Работник
+							.slider-course-for__circle
+					.course-for-big-slider
+
+						.course-for-big-slider__mini
+							.mini-block
+								.mini-block__img
+									img(src="static/img/chubaka-mini.png", alt="Чубака")
+								.mini-block__text Директор по маркетингу
+							.mini-block
+								.mini-block__img
+									img(src="static/img/c3po-mini.png", alt="c3po")
+								.mini-block__text Директор по маркетингу
+							.mini-block
+								.mini-block__img
+									img(src="static/img/r2d2-mini.png", alt="r2d2")
+								.mini-block__text Директор по маркетингу
+							.mini-block
+								.mini-block__img
+									img(src="static/img/vader-mini.png", alt="Вейдер")
+								.mini-block__text Директор по маркетингу
+
+						.course-for-big-slider__maxi
+							.maxi-block
+								.maxi-block__img
+									img(src="static/img/vader-big.png", alt="Вейдер")
+								//- .maxi-block__text
+								//- 	h3.maxi-block__text-title Генеральный директор
+								//- 	p.maxi-block__text-subtitle Владелец бизнеса
+
+				.cource-info-wrapper
+					.cource-info
+						.cource-info-block(data-aos="fade-up")
+							img(src="static/img/glasses.png", alt="Очки")
+							h3.cource-info-block__title 100% контроль
+							p.cource-info-block__text Любых интернет-агетств и подрядчиков
+					.cource-info
+						.cource-info-block(data-aos="fade-up")
+							img(src="static/img/kompas.png", alt="Компасс")
+							h3.cource-info-block__title Стратегия
+							p.cource-info-block__text Готовая стратегия электронного маркетинга на 6-12 месяцев
+					.cource-info
+						.cource-info-block(data-aos="fade-up")
+							img(src="static/img/rubik.png", alt="Кубик Рубика")
+							h3.cource-info-block__title Аналитика
+							p.cource-info-block__text Аналитика «до денег» — то, что ждет от вас руководство
+					.cource-info
+						.cource-info-block(data-aos="fade-up")
+							img(src="static/img/plan.png", alt="Схема")
+							h3.cource-info-block__title Ясность
+							p.cource-info-block__text Расскажем, как выстроить отдел интернет-маркетинга внутри компании
 
 			// --------------reasons---------------
 			section.reasons
-				.container
+				.container.container-test-1024.container-test-1440
 					h2.reasons__title 8 Причин пройти курс
-					p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
-					img(src="static/img/borsh.png", alt="Борщ")
-					p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
-					.slider-reasons__wr
-						h2.slider-reasons__title Минусы дорогих курсов:
-						p.slider-reasons__text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
-						.pages
-							.pages__pre предыдущий
-							.pages__num 1
-							.pages__num-from /8
-							.pages__next следующий
+					.reasons-slider
+						p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+						.reasons__img
+							img(src="static/img/borsh.jpg", alt="Борщ")
+						p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+						h2.reasons__minus Минусы дорогих курсов:
+						p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+						a.button.reasons-button Зарегистрироваться
+					.pages.reasons-pages
+						.pages__pre предыдущий
+						.pages__num 1
+						.pages__num-from /8
+						.pages__next следующий
 			// --------------specialists-----------
 			section.specialists
-				.container
+				.container.container-test-1024
 					h3.specialists__title Курс проводят специалисты маркетинговой группы <span>«Комплето»</span>
-					img.specialists__img(src="static/img/completo-peoples-small.png", alt="Специалисты группы Комплето")
+					.specialists__img
+						img.specialists__img(src="static/img/completo-peoples-small.jpg", alt="Специалисты группы Комплето")
 
 			// --------------teachers--------------
 			section.teachers
@@ -148,13 +197,13 @@ html(lang="ru-RU")
 							.mini-image01
 								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
 							.mini-image01
-								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+								img(src="static/img/avatar-vladimir-davydov3.png", alt="Андрей Гавриков")
 							.mini-image01
-								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+								img(src="static/img/avatar-mikhael-fedorov3.png", alt="Андрей Гавриков")
 							.mini-image01
-								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+								img(src="static/img/dmitry-fedorov3.png", alt="Андрей Гавриков")
 							.mini-image01
-								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+								img(src="static/img/dmitry-fedorov3.png", alt="Андрей Гавриков")
 						#slider01.teachers-slider__full-info
 							.full-info01
 								.full-info01__img
@@ -216,41 +265,42 @@ html(lang="ru-RU")
 
 			// --------------training-packages-----
 			section.training
-				.container
+				.container.container-test-1024.container-test-1440
 					h2.training__title Выберите свой пакет&nbsp;обучения
-					.package-wr
-						.package-card
-							h3.package-card__title пакет
-							h2.package-card__name «<span>С</span>тратегия»
-							.package-card__img-wr
-								img(src="static/img/box_strategy.png", alt="Пакет стратегия")
-								.package-card__img-place Мест осталось
-								p.package-card__img-place-text 180/200
-							h3.package-card__price 71 000 руб
-							p.package-card__price-text От 6 256 рублей в месяц***
-							a(href="#").package-card__info Что входит в пакет
-					.package-wr
-						.package-card
-							h3.package-card__title пакет
-							h2.package-card__name «<span>С</span>тратегия»
-							.package-card__img-wr
-								img(src="static/img/box_strategy.png", alt="Пакет стратегия")
-								.package-card__img-place Мест осталось
-								p.package-card__img-place-text 180/200
-							h3.package-card__price 71 000 руб
-							p.package-card__price-text От 6 256 рублей в месяц***
-							a(href="#").package-card__info Что входит в пакет
-					.package-wr
-						.package-card
-							h3.package-card__title пакет
-							h2.package-card__name «<span>К</span>орпоративный»
-							.package-card__img-wr
-								img(src="static/img/box_strategy.png", alt="Пакет стратегия")
-								.package-card__img-place Мест осталось
-								p.package-card__img-place-text 180/200
-							h3.package-card__price 150 000 руб
-							p.package-card__price-text Зависит от количества часов, сотрудников и задач обучения
-							a(href="#").package-card__info Что входит в пакет
+					.package-wrapper
+						.package-wr
+							.package-card
+								h3.package-card__title Пакет
+								h2.package-card__name «<span>С</span>тратегия»
+								.package-card__img-wr
+									img(src="static/img/box_strategy.png", alt="Пакет стратегия")
+									.package-card__img-place Мест осталось
+									p.package-card__img-place-text 180/200
+								h3.package-card__price 71 000 руб
+								p.package-card__price-text От 6 256 рублей в месяц***
+								a(href="#").package-card__info Что входит в пакет
+						.package-wr
+							.package-card
+								h3.package-card__title Пакет
+								h2.package-card__name «<span>Т</span>ктика»
+								.package-card__img-wr
+									img(src="static/img/box_tactic.png", alt="Пакет тактика")
+									.package-card__img-place Мест осталось
+									p.package-card__img-place-text 180/200
+								h3.package-card__price 51 000 руб
+								p.package-card__price-text От От 4 442 рублей в месяц***
+								a(href="#").package-card__info Что входит в пакет
+						.package-wr
+							.package-card
+								h3.package-card__title Пакет
+								h2.package-card__name «<span>К</span>орпоративный»
+								.package-card__img-wr
+									img(src="static/img/box_corp.png", alt="Пакет корпоративный")
+									.package-card__img-place Мест осталось
+									p.package-card__img-place-text 180/200
+								h3.package-card__price 150 000 руб
+								p.package-card__price-text TODO: короткий текст
+								a(href="#").package-card__info Что входит в пакет
 					.training-info
 						.training-info__card
 							.training-info-img
@@ -268,11 +318,9 @@ html(lang="ru-RU")
 							h3.training-info-title Закрытая группа
 							p.training-info-text Вы станете участником закрытого клуба выпускников, в котором маркетологи и владельцы бизнеса обмениваются опытом, делятся полезными материалами, а преподаватели отвечают на сложные вопросы по digital-маркетингу
 
-
-
 			// --------------registration-form-----
 			.registration-wr
-				.container
+				.container.container-test-1024.container-test-1440
 					form(action="").registration
 						h2.registration__title Регистрация
 						.registration__label-wr
@@ -287,7 +335,7 @@ html(lang="ru-RU")
 						.registration__label-wr
 							label.registration__label Промокод
 								input.registration__label-text(type="text" invalid)
-						a.button(href="#") Зарегистрироваться
+						a.button.registration__botton(href="#") Зарегистрироваться
 						.registration__checkbox
 							.registration__checkbox-wr
 								label.registration__checkbox-label Согласен с условиями оферты и ознакомлен с правилами обработки персональных данных
@@ -328,63 +376,114 @@ html(lang="ru-RU")
 
 			// --------------programm--------------
 			section.programm
-				.container
+				.container.container-test-1024.container-test-1440
 					h2.programm__title Преподаватели
-					.teacher-wr
-						h3.teacher__modul Модуль 1
-						.teacher__img
-							img(src="static/img/avatar-andrey-gavrikov3.png", alt="Андрей Гавриков")
-						h3.teacher__name Андрей Гавриков
-						p.teacher__text Ставим цель digital-маркетинга, сегментируем целевую аудиторию, составляем список целевых действий на сайте
-						.teacher__info
-							.teacher-theory 3.5 часа
-							.teacher-practice 2 часа
-						a(href="").teacher__button Подробнее
-					.pages
+					.moduls-wr#modulsWr
+						include teacher.pug
+						include teacher.pug
+						include teacher.pug
+						include teacher.pug
+						include teacher.pug
+						include teacher.pug
+						include teacher.pug
+						include teacher.pug
+						include teacher.pug
+						include teacher.pug
+						include teacher.pug
+					.pages.programm__pages
 						.pages__pre предыдущий
 						.pages__num 1
 						.pages__num-from /11
 						.pages__next следующий
-					a.button.mt40(href="#") Зарегистрироваться
+					a.button.mt40.programm__pages(href="#") Зарегистрироваться
 					h3.strategy__subtitle При покупке пакета
 					h2.strategy__title «Стратегия»
-					.teacher-wr
-						h3.teacher__modul.teacher__modul-green Модуль 13
-						.teacher__img
-							img(src="static/img/avatar-mikhael-fedorov3.png", alt="Михаил федоров")
-						h3.teacher__name Михаил федоров
-						p.teacher__text Digital-директор: разрабатываем стратегию digital-маркетинга
-						.teacher__info
-							.teacher-theory 3.5 часа
-							.teacher-practice 2 часа
-						a(href="").teacher__button Подробнее
-					.pages
+					.moduls-wr#modulsWr
+						include modul.pug
+						include modul.pug
+						include modul.pug
+						include modul.pug
+						include modul.pug
+						include modul.pug
+						include modul.pug
+					.pages.programm__pages
 						.pages__pre предыдущий
 						.pages__num 1
 						.pages__num-from /4
 						.pages__next следующий
-					a.button.mt40(href="#") Зарегистрироваться
+					a.button.mt40.programm__pages(href="#") Зарегистрироваться
 
 			// --------------projects--------------
 			section.projects
 				.container
 					h2.projects__title Программа разработана на основе проектов для&nbsp;наших клиентов
-					.companies-wr
-						img(src="static/img/company-alta.png", alt="alta")
-						img(src="static/img/company-severstal.png", alt="alta")
-						img(src="static/img/company-ucg.png", alt="alta")
-						img(src="static/img/company-torex.png", alt="alta")
-						img(src="static/img/company-sxz.png", alt="alta")
-						img(src="static/img/company-megaflex.png", alt="alta")
-						img(src="static/img/company-edimdoma.png", alt="alta")
-						img(src="static/img/company-bestklinik.png", alt="alta")
-						img(src="static/img/company-obeh.png", alt="alta")
-						img(src="static/img/company-velux.png", alt="alta")
-					.pages
-						.pages__pre предыдущий
-						.pages__num 1
-						.pages__num-from /3
-						.pages__next следующий
+					.companies-wrapper#companies
+						.companies-wr
+							.companies__img
+								img(src="static/img/company-alta.png", alt="alta")
+							.companies__img
+								img(src="static/img/company-severstal.png", alt="alta")
+							.companies__img
+								img(src="static/img/company-ucg.png", alt="alta")
+							.companies__img
+								img(src="static/img/company-torex.png", alt="alta")
+							.companies__img
+								img(src="static/img/company-sxz.png", alt="alta")
+							.companies__img
+								img(src="static/img/company-megaflex.png", alt="alta")
+							.companies__img
+								img(src="static/img/company-edimdoma.png", alt="alta")
+							.companies__img
+								img(src="static/img/company-bestklinik.png", alt="alta")
+							.companies__img
+								img(src="static/img/company-obeh.png", alt="alta")
+							.companies__img
+								img(src="static/img/company-velux.png", alt="alta")
+						.companies-wr
+							.companies__img
+								img(src="static/img/ochakovsky.png", alt="ochakovsky")
+							.companies__img
+								img(src="static/img/lafarge.png", alt="lafarge")
+							.companies__img
+								img(src="static/img/komek.png", alt="komek")
+							.companies__img
+								img(src="static/img/beeline.png", alt="beeline")
+							.companies__img
+								img(src="static/img/konfael.png", alt="konfael")
+							.companies__img
+								img(src="static/img/lapino.png", alt="lapino")
+							.companies__img
+								img(src="static/img/mariya.png", alt="mariya")
+							.companies__img
+								img(src="static/img/buldors.png", alt="buldors")
+							.companies__img
+								img(src="static/img/favorite.png", alt="favorite")
+						.companies-wr
+							.companies__img
+								img(src="static/img/interflora.png", alt="interflora")
+							.companies__img
+								img(src="static/img/kant.png", alt="kant")
+							.companies__img
+								img(src="static/img/aristo.png", alt="aristo")
+							.companies__img
+								img(src="static/img/hartman.png", alt="hartman")
+							.companies__img
+								img(src="static/img/speco.png", alt="speco")
+							.companies__img
+								img(src="static/img/mother.png", alt="mother")
+							.companies__img
+								img(src="static/img/fitnes.png", alt="fitnes")
+							.companies__img
+								img(src="static/img/dataline.png", alt="dataline")
+							.companies__img
+								img(src="static/img/unipharm.png", alt="unipharm")
+							.companies__img
+								img(src="static/img/gazpromliz.png", alt="gazpromliz")
+					//- .pages
+					//- 	.pages__pre предыдущий
+					//- 	.pages__num 1
+					//- 	.pages__num-from /3
+					//- 	.pages__next следующий
 			// --------------outcomes--------------
 			section.outcomes
 				.container
@@ -457,7 +556,7 @@ html(lang="ru-RU")
 
 			// --------------registration-form-----
 			.registration-wr
-				.container
+				.container.container-test-1024.container-test-1440
 					form(action="").registration
 						h2.registration__title Регистрация
 						.registration__label-wr
@@ -545,10 +644,8 @@ html(lang="ru-RU")
 					.corporate-training__img
 						img(src="static/img/garanty-mans.png", alt="гарантия")
 			// --------------footer----------------
-			//- footer.footer
-			//- 	h2.footer__title Подать заявку на корпортивное обучение
 			.registration-wr
-				.container
+				.container.container-test-1024.container-test-1440
 					form(action="").registration
 						h2.registration__title Подать заявку на корпортивное обучение
 						.registration__label-wr
@@ -573,14 +670,8 @@ html(lang="ru-RU")
 								label.registration__checkbox-label Подписаться на материалы блога и анонсы интересных событий
 									input.registration__checkbox-input(type="checkbox")
 									span.registration__checkbox-input-checkbox
-							//- .registration__checkbox-wr
-							//- 	label.registration__checkbox-label Хочу приобрести пакет «Стратегия»
-							//- 		input.registration__checkbox-input(type="checkbox")
-							//- 		span.registration__checkbox-input-checkbox
-							//- .registration__checkbox-wr
-							//- 	label.registration__checkbox-label Хочу приобрести пакет «Тактика»
-							//- 		input.registration__checkbox-input(type="checkbox")
-							//- 		span.registration__checkbox-input-checkbox
 
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 			script(src="static/js/libs.min.js")
 			script(src="static/js/main.js")
+			<script>AOS.init({duration: 600});</script>

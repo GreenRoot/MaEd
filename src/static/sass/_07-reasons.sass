@@ -1,4 +1,5 @@
 .reasons
+	margin-top: -1px
 	background-color: #fff
 	padding: 60px 30px 0 30px
 	text-align: center
@@ -18,13 +19,74 @@
 			line-height: 96px
 			text-align: center
 			width: auto
-			margin: 0 0 100px 0
+			margin: 0 0 0 0
 
 .reasons-slider
 	position: relative
 	display: flex
 	flex-direction: column
+
+.reasons-slider-tog //навигация слайдера
+	display: none
+	@media (min-width: 1024px)
+		display: flex
+		justify-content: center
+		align-items: center
+.reasons-slider-tog-block
+	display: flex
+	flex-direction: column
+	justify-content: center
+	margin-left: -10px
+	margin-right: -10px
+	cursor: pointer
+	@media (min-width: 1440px)
+		margin-left: 20px
+		margin-right: 20px
+.reasons-slider-tog-block:nth-child(1),.reasons-slider-tog-block:nth-child(8)
+	margin-top: 190px
+.reasons-slider-tog-block:nth-child(2),.reasons-slider-tog-block:nth-child(7)
+	margin-top: 40px
+.reasons-slider-tog-block:nth-child(3),.reasons-slider-tog-block:nth-child(6)
+	margin-bottom: 50px
+.reasons-slider-tog-block:nth-child(4),.reasons-slider-tog-block:nth-child(5)
+	margin-bottom: 80px
+.tog-block__img
+	display: flex
+	justify-content: center
+	align-items: flex-end
+	margin-bottom: 24px
+	filter: grayscale(70%)
+	width: 144px
+	height: 98px
+.tog-block__btn
+	display: block
+	margin: auto
+	width: 64px
+	height: 64px
+	border: 2px solid #DEDEDE
+	border-radius: 50%
+	background-color: transparent
+	outline: none
+	text-decoration: none
+	cursor: pointer
+
+	font-family: SignPainter, sans-serif
+	font-size: 40px
+	line-height: 65px
+	text-align: center
+	letter-spacing: 0.02em
+	color: #343235
+	&:focus
+		border: 2px solid #343235
+		color: #F03A2B
+
 .reasons
+	&-slider-wr
+	&-slider-block
+		position: relative
+		display: flex
+		flex-direction: column
+		transition: 0.4s
 	&__subtitle
 		font-family: Museo Sans Cyrl, sans-serif
 		font-size: 20px
@@ -48,7 +110,7 @@
 			width: 100%	
 		@media (min-width: 1024px)
 			position: absolute
-			top: 144px
+			top: 130px
 			right: 0
 			width: 440px
 		@media (min-width: 1440px)

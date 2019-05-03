@@ -329,6 +329,43 @@ h1, h2, h3, p
 	@media (min-width: 1024px)
 		display: none
 
+.droid
+	display: none
+	@media (min-width: 1024px)
+		display: block
+	position: absolute
+	top: 800px
+	left: -200px
+	&-img
+		width: 376px
+		height: 128px
+		background: url(../img/droid.png) center no-repeat
+
+.tabletBlue
+	display: none
+	@media (min-width: 1024px)
+		display: block
+	position: absolute
+	top: 720px
+	left: 160px
+	z-index: 5
+	&-img
+		width: 255px
+		height: 183px
+		background: url(../img/tablet-blue.png) center no-repeat
+.tabletRed
+	display: none
+	@media (min-width: 1024px)
+		display: block
+	position: absolute
+	top: 500px
+	right: 300px
+	z-index: 5
+	&-img
+		width: 140px
+		height: 114px
+		background: url(../img/tablet-red.png) center no-repeat
+
 .mt40
 	margin-top: 40px
 .none

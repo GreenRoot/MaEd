@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#171717">
     <link rel="stylesheet" href="static/css/slick.css">
     <link rel="stylesheet" href="static/css/slick-theme.css"><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="static/css/main.css?v.0.0.21">
+    <link rel="stylesheet" href="static/css/main.css?v.0.0.22">
     <title>MaEd</title>
   </head>
   <body>
@@ -29,6 +29,11 @@
       <!-- --------------main------------------->
       <section class="container main-container container-test-1024 container-test-1440">
         <div class="main">
+          <div class="droid" data-aos="fade-up-right">
+            <div id="droid">
+              <div class="droid-img" data-depth="0.3"></div>
+            </div>
+          </div>
           <div class="marketers">
             <div class="marketers__photos"><img src="static/img/avatar-andrey-gavrikov.png" alt="Андрей Гавриков"><img src="static/img/avatar-vladimir-davydov.png" alt="Владимир Давыдов"><img src="static/img/avatar-mikhael-fedorov.png" alt="Михаил фёдоров"><img src="static/img/avatar-andrey-gavrikov.png" alt="Андрей Гавриков"><img src="static/img/avatar-vladimir-davydov.png" alt="Владимир Давыдов"><img src="static/img/avatar-mikhael-fedorov.png" alt="Михаил фёдоров"><img src="static/img/avatar-andrey-gavrikov.png" alt="Андрей Гавриков"></div>
             <p class="marketers__text">Курс разработали практикующие интернет-маркетологи и&nbsp;совладельцы маркетинговой группы <span class="marketers__text-yellow">«Ком ето»</span> на основе опыта работы с российскими компаниями</p>
@@ -41,6 +46,16 @@
       <div class="header__img"></div>
       <!-- --------------feature----------------->
       <section class="feature">
+        <div class="tabletBlue">
+          <div id="tabletBlue">
+            <div class="tabletBlue-img" data-depth="0.2"></div>
+          </div>
+        </div>
+        <div class="tabletRed">
+          <div id="tabletRed">
+            <div class="tabletRed-img" data-depth="0.4"></div>
+          </div>
+        </div>
         <div class="feature__img"></div>
         <div class="container container-test-1024 container-test-1440">
           <h2 class="feature__title">Чем этот курс отличается от других?</h2>
@@ -61,7 +76,7 @@
               <h3 class="features__title-custom">Кастомизируем</h3>
               <p class="features__text-custom">программу под задачи вашей организации и обучим сотрудников</p>
             </div>
-          </div>
+          </div><img class="feature-foot" src="static/img/features-foot.png" alt="foot">
         </div>
       </section>
       <!-- --------------course-for-------------->
@@ -97,26 +112,51 @@
           </div>
           <div class="course-for-big-slider">
             <div class="course-for-big-slider__mini">
-              <div class="mini-block">
+              <div class="mini-block chubaka-mini">
                 <div class="mini-block__img"><img src="static/img/chubaka-mini.png" alt="Чубака"></div>
                 <div class="mini-block__text">Директор по маркетингу</div>
               </div>
-              <div class="mini-block">
+              <div class="mini-block c3po-mini">
                 <div class="mini-block__img"><img src="static/img/c3po-mini.png" alt="c3po"></div>
-                <div class="mini-block__text">Директор по маркетингу</div>
+                <div class="mini-block__text">Менеджер по маркетингу</div>
               </div>
-              <div class="mini-block">
+              <div class="mini-block r2d2-mini">
                 <div class="mini-block__img"><img src="static/img/r2d2-mini.png" alt="r2d2"></div>
-                <div class="mini-block__text">Директор по маркетингу</div>
+                <div class="mini-block__text">Коммерческий директор</div>
               </div>
-              <div class="mini-block">
+              <div class="mini-block vader-mini">
                 <div class="mini-block__img"><img src="static/img/vader-mini.png" alt="Вейдер"></div>
-                <div class="mini-block__text">Директор по маркетингу</div>
+                <div class="mini-block__text">Генеральный директор</div>
               </div>
             </div>
             <div class="course-for-big-slider__maxi">
-              <div class="maxi-block">
+              <div class="maxi-block maxi-block-chubaka" style="display:none;">
+                <div class="maxi-block__img"><img src="static/img/chubaka-big.png" alt="Чубака"></div>
+                <div class="maxi-block__text">
+                  <h3 class="maxi-block__text-title"><span>Директор</span><br>по маркетингу</h3>
+                  <p class="maxi-block__text-subtitle">Хороший работник</p>
+                </div>
+              </div>
+              <div class="maxi-block maxi-block-c3po" style="display:none;">
+                <div class="maxi-block__img"><img src="static/img/c3po-big.png" alt="c3po"></div>
+                <div class="maxi-block__text">
+                  <h3 class="maxi-block__text-title"><span>Коммерческий</span><br>директор</h3>
+                  <p class="maxi-block__text-subtitle">Хороший работник</p>
+                </div>
+              </div>
+              <div class="maxi-block maxi-block-r2d2" style="display:none;">
+                <div class="maxi-block__img"><img src="static/img/r2d2-big.png" alt="r2d2"></div>
+                <div class="maxi-block__text">
+                  <h3 class="maxi-block__text-title"><span>Коммерческий</span><br>директор</h3>
+                  <p class="maxi-block__text-subtitle">Хороший работник</p>
+                </div>
+              </div>
+              <div class="maxi-block maxi-block-vader">
                 <div class="maxi-block__img"><img src="static/img/vader-big.png" alt="Вейдер"></div>
+                <div class="maxi-block__text">
+                  <h3 class="maxi-block__text-title"><span>Генеральный</span><br>директор</h3>
+                  <p class="maxi-block__text-subtitle">Владелец бизнеса</p>
+                </div>
               </div>
             </div>
           </div>
@@ -153,11 +193,98 @@
         <div class="container container-test-1024 container-test-1440">
           <h2 class="reasons__title">8 Причин пройти курс</h2>
           <div class="reasons-slider">
-            <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
-            <div class="reasons__img"><img src="static/img/borsh.jpg" alt="Борщ"></div>
-            <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
-            <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
-            <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+            <div class="reasons-slider-tog">
+              <div class="reasons-slider-tog-block tog-img1">
+                <div class="tog-block__img"><img src="static/img/tog-img1.jpg" alt="tog-img1.jpg"></div>
+                <button class="tog-block__btn">1</button>
+              </div>
+              <div class="reasons-slider-tog-block tog-img2">
+                <div class="tog-block__img"><img src="static/img/tog-img2.jpg" alt="tog-img1.jpg"></div>
+                <button class="tog-block__btn">2</button>
+              </div>
+              <div class="reasons-slider-tog-block tog-img3">
+                <div class="tog-block__img"><img src="static/img/tog-img3.jpg" alt="tog-img1.jpg"></div>
+                <button class="tog-block__btn">3</button>
+              </div>
+              <div class="reasons-slider-tog-block tog-img4">
+                <div class="tog-block__img"><img src="static/img/tog-img4.jpg" alt="tog-img1.jpg"></div>
+                <button class="tog-block__btn">4</button>
+              </div>
+              <div class="reasons-slider-tog-block tog-img5">
+                <div class="tog-block__img"><img src="static/img/tog-img5.jpg" alt="tog-img1.jpg"></div>
+                <button class="tog-block__btn">5</button>
+              </div>
+              <div class="reasons-slider-tog-block tog-img6">
+                <div class="tog-block__img"><img src="static/img/tog-img6.jpg" alt="tog-img1.jpg"></div>
+                <button class="tog-block__btn">6</button>
+              </div>
+              <div class="reasons-slider-tog-block tog-img7">
+                <div class="tog-block__img"><img src="static/img/tog-img7.jpg" alt="tog-img1.jpg"></div>
+                <button class="tog-block__btn">7</button>
+              </div>
+              <div class="reasons-slider-tog-block tog-img8">
+                <div class="tog-block__img"><img src="static/img/tog-img8.jpg" alt="tog-img1.jpg"></div>
+                <button class="tog-block__btn">8</button>
+              </div>
+            </div>
+            <div class="reasons-slider-wr">
+              <div class="reasons-slider-block tog-big-img1">
+                <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
+                <div class="reasons__img"><img src="static/img/borsh.jpg" alt="Борщ"></div>
+                <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
+                <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
+                <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+              </div>
+              <div class="reasons-slider-block tog-big-img2" style="display:none;">
+                <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
+                <div class="reasons__img"><img src="static/img/tog-big-img2.jpg" alt="Борщ"></div>
+                <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
+                <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
+                <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+              </div>
+              <div class="reasons-slider-block tog-big-img3" style="display:none;">
+                <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
+                <div class="reasons__img"><img src="static/img/tog-big-img3.jpg" alt="Борщ"></div>
+                <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
+                <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
+                <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+              </div>
+              <div class="reasons-slider-block tog-big-img4" style="display:none;">
+                <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
+                <div class="reasons__img"><img src="static/img/tog-big-img4.jpg" alt="Борщ"></div>
+                <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
+                <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
+                <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+              </div>
+              <div class="reasons-slider-block tog-big-img5" style="display:none;">
+                <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
+                <div class="reasons__img"><img src="static/img/tog-big-img5.jpg" alt="Борщ"></div>
+                <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
+                <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
+                <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+              </div>
+              <div class="reasons-slider-block tog-big-img6" style="display:none;">
+                <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
+                <div class="reasons__img"><img src="static/img/tog-big-img6.jpg" alt="Борщ"></div>
+                <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
+                <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
+                <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+              </div>
+              <div class="reasons-slider-block tog-big-img7" style="display:none;">
+                <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
+                <div class="reasons__img"><img src="static/img/tog-big-img7.jpg" alt="Борщ"></div>
+                <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
+                <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
+                <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+              </div>
+              <div class="reasons-slider-block tog-big-img8" style="display:none;">
+                <p class="reasons__subtitle">Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний</p>
+                <div class="reasons__img"><img src="static/img/tog-big-img8.jpg" alt="Борщ"></div>
+                <p class="reasons__text">Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.</p>
+                <h2 class="reasons__minus">Минусы дорогих курсов:</h2>
+                <p class="reasons__minus-text">Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.</p><a class="button reasons-button">Зарегистрироваться</a>
+              </div>
+            </div>
           </div>
           <div class="pages reasons-pages">
             <div class="pages__pre">предыдущий</div>
@@ -176,30 +303,17 @@
       </section>
       <!-- --------------teachers---------------->
       <section class="teachers">
-        <div class="container company-container">
-          <div class="company">
-            <h3 class="company__title">У нас учились специалисты из этих компаний:</h3>
-            <div class="company__img">
-              <div class="company__img-block"><img src="/static/img/dassault.png" alt="dassault"></div>
-              <div class="company__img-block"><img src="/static/img/gasprom01.png" alt="Газпром"></div>
-            </div>
-            <div class="pages">
-              <div class="pages__pre">предыдущий</div>
-              <div class="pages__num">1</div>
-              <div class="pages__num-from">/8</div>
-              <div class="pages__next">следующий</div>
-            </div>
-          </div>
+        <div class="container container-test-1024 company-container">
           <h2 class="teachers__title">Преподаватели</h2>
+          <div class="teachers-slider__mini-images">
+            <div class="mini-image01"><img src="static/img/avatar-andrey-gavrikov2.png" alt="Андрей Гавриков"></div>
+            <div class="mini-image01"><img src="static/img/avatar-vladimir-davydov3.png" alt="Андрей Гавриков"></div>
+            <div class="mini-image01"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Андрей Гавриков"></div>
+            <div class="mini-image01"><img src="static/img/dmitry-fedorov3.png" alt="Андрей Гавриков"></div>
+            <div class="mini-image01"><img src="static/img/dmitry-fedorov3.png" alt="Андрей Гавриков"></div>
+          </div>
           <div class="teachers-slider">
-            <div class="teachers-slider__mini-images">
-              <div class="mini-image01"><img src="static/img/avatar-andrey-gavrikov2.png" alt="Андрей Гавриков"></div>
-              <div class="mini-image01"><img src="static/img/avatar-vladimir-davydov3.png" alt="Андрей Гавриков"></div>
-              <div class="mini-image01"><img src="static/img/avatar-mikhael-fedorov3.png" alt="Андрей Гавриков"></div>
-              <div class="mini-image01"><img src="static/img/dmitry-fedorov3.png" alt="Андрей Гавриков"></div>
-              <div class="mini-image01"><img src="static/img/dmitry-fedorov3.png" alt="Андрей Гавриков"></div>
-            </div>
-            <div class="teachers-slider__full-info" id="slider01">
+            <div class="teachers-slider__full-info">
               <div class="full-info01">
                 <div class="full-info01__img"><img src="static/img/mixail-fedorov-big.png" alt="Михаил Фёдоров"></div>
                 <h3 class="full-info01__name">Михаил Федоров</h3>
@@ -211,53 +325,6 @@
                   <p class="full-info01__competence-text">Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)</p>
                   <p class="full-info01__competence-text">Классический маркетинг</p>
                   <p class="full-info01__competence-text">Построение отчетности с помощью сквозной аналитики для управления бизнесом</p>
-                </div>
-                <div class="cooperated">
-                  <h3 class="cooperated__title">Сотрундничал</h3>
-                  <div class="cooperated__logo-wr">
-                    <div class="cooperated__logo-img"><img src="/static/img/gasprom01.png" alt="ГазПром"></div>
-                    <div class="cooperated__logo-img"><img src="/static/img/gasprom01.png" alt="ГазПром"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="full-info01">
-                <div class="full-info01__img"><img src="static/img/mixail-fedorov-big.png" alt="Михаил Фёдоров"></div>
-                <h3 class="full-info01__name">Михаил Федоров</h3>
-                <p class="full-info01__text">Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие</p>
-                <h3 class="full-info01__title">Ключевые компетенци</h3>
-                <div class="full-info01__competence">
-                  <p class="full-info01__competence-text">SEO-архитектор: планирование, прогнозирование и реализация стратегий SEO и SEM</p>
-                  <p class="full-info01__competence-text">Поисковая и контекстная реклама</p>
-                  <p class="full-info01__competence-text">Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)</p>
-                  <p class="full-info01__competence-text">Классический маркетинг</p>
-                  <p class="full-info01__competence-text">Построение отчетности с помощью сквозной аналитики для управления бизнесом</p>
-                </div>
-                <div class="cooperated">
-                  <h3 class="cooperated__title">Сотрундничал</h3>
-                  <div class="cooperated__logo-wr">
-                    <div class="cooperated__logo-img"><img src="/static/img/gasprom01.png" alt="ГазПром"></div>
-                    <div class="cooperated__logo-img"><img src="/static/img/gasprom01.png" alt="ГазПром"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="full-info01">
-                <div class="full-info01__img"><img src="static/img/mixail-fedorov-big.png" alt="Михаил Фёдоров"></div>
-                <h3 class="full-info01__name">Михаил Федоров</h3>
-                <p class="full-info01__text">Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие</p>
-                <h3 class="full-info01__title">Ключевые компетенци</h3>
-                <div class="full-info01__competence">
-                  <p class="full-info01__competence-text">SEO-архитектор: планирование, прогнозирование и реализация стратегий SEO и SEM</p>
-                  <p class="full-info01__competence-text">Поисковая и контекстная реклама</p>
-                  <p class="full-info01__competence-text">Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)</p>
-                  <p class="full-info01__competence-text">Классический маркетинг</p>
-                  <p class="full-info01__competence-text">Построение отчетности с помощью сквозной аналитики для управления бизнесом</p>
-                </div>
-                <div class="cooperated">
-                  <h3 class="cooperated__title">Сотрундничал</h3>
-                  <div class="cooperated__logo-wr">
-                    <div class="cooperated__logo-img"><img src="/static/img/gasprom01.png" alt="ГазПром"></div>
-                    <div class="cooperated__logo-img"><img src="/static/img/gasprom01.png" alt="ГазПром"></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -883,8 +950,9 @@
             </div>
           </form>
         </div>
-      </div><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script src="static/js/libs.min.js"></script>
+      </div>
+      <script src="static/js/libs.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script src="static/js/main.js"></script><script>AOS.init({duration: 600});</script>
     </div>
   </body>

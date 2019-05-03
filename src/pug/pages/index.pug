@@ -6,9 +6,8 @@ html(lang="ru-RU")
 		meta(name="theme-color" content="#171717")
 		link(rel="stylesheet", href="static/css/slick.css")
 		link(rel="stylesheet", href="static/css/slick-theme.css")
-		//- link(rel="stylesheet", href="https://unpkg.com/aos@2.3.1/dist/aos.css")
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		link(rel="stylesheet", href="static/css/main.css?v.0.0.21")
+		link(rel="stylesheet", href="static/css/main.css?v.0.0.22")
 		title MaEd
 	body
 		.main-wr
@@ -30,6 +29,9 @@ html(lang="ru-RU")
 			// --------------main-----------------
 			section.container.main-container.container-test-1024.container-test-1440
 				.main
+					.droid(data-aos="fade-up-right")
+						#droid
+							.droid-img(data-depth="0.3")
 					.marketers
 						.marketers__photos
 							img(src="static/img/avatar-andrey-gavrikov.png", alt="Андрей Гавриков")
@@ -50,6 +52,12 @@ html(lang="ru-RU")
 
 			// --------------feature---------------
 			section.feature
+				.tabletBlue
+					#tabletBlue
+						.tabletBlue-img(data-depth="0.2")
+				.tabletRed
+					#tabletRed
+						.tabletRed-img(data-depth="0.4")
 				.feature__img
 				.container.container-test-1024.container-test-1440
 					h2.feature__title Чем этот курс отличается от других?
@@ -71,6 +79,7 @@ html(lang="ru-RU")
 							//- 	path.features__path(d="M 5.9145288,58.515306 5.0695961,227.07938 c 5.4407869,17.5855 14.3047369,32.61569 33.7973069,39.71183 41.046703,4.81365 82.832767,7.59405 125.472507,8.02686 52.245,-0.66921 104.49001,-1.68287 156.73501,-5.49206 16.9126,-8.88487 26.34591,-22.37239 32.95237,-37.5995 L 354.87173,56.402974 C 352.34708,43.528982 350.67052,30.555216 335.01581,19.225937 315.47858,10.933781 293.8333,7.2860945 270.02847,6.923159 L 201.09398,5.2845473 139.83636,4.862081 68.862013,9.0867444 C 56.142153,10.64221 44.213798,9.7647826 31.262509,15.001273 14.781699,22.983936 6.6511246,39.5724 5.9145288,58.515306 Z")
 							h3.features__title-custom Кастомизируем
 							p.features__text-custom программу под задачи вашей организации и обучим сотрудников
+					img.feature-foot(src="static/img/features-foot.png", alt="foot")
 
 			// --------------course-for------------
 			section.course-for
@@ -105,30 +114,52 @@ html(lang="ru-RU")
 					.course-for-big-slider
 
 						.course-for-big-slider__mini
-							.mini-block
+							.mini-block.chubaka-mini
 								.mini-block__img
 									img(src="static/img/chubaka-mini.png", alt="Чубака")
 								.mini-block__text Директор по маркетингу
-							.mini-block
+							.mini-block.c3po-mini
 								.mini-block__img
 									img(src="static/img/c3po-mini.png", alt="c3po")
-								.mini-block__text Директор по маркетингу
-							.mini-block
+								.mini-block__text Менеджер по маркетингу
+							.mini-block.r2d2-mini
 								.mini-block__img
 									img(src="static/img/r2d2-mini.png", alt="r2d2")
-								.mini-block__text Директор по маркетингу
-							.mini-block
+								.mini-block__text Коммерческий директор
+							.mini-block.vader-mini
 								.mini-block__img
 									img(src="static/img/vader-mini.png", alt="Вейдер")
-								.mini-block__text Директор по маркетингу
+								.mini-block__text Генеральный директор
 
 						.course-for-big-slider__maxi
-							.maxi-block
+
+							.maxi-block.maxi-block-chubaka(style="display:none;")
+								.maxi-block__img
+									img(src="static/img/chubaka-big.png", alt="Чубака")
+								.maxi-block__text
+									h3.maxi-block__text-title <span>Директор</span><br>по маркетингу
+									p.maxi-block__text-subtitle Хороший работник
+
+							.maxi-block.maxi-block-c3po(style="display:none;")
+								.maxi-block__img
+									img(src="static/img/c3po-big.png", alt="c3po")
+								.maxi-block__text
+									h3.maxi-block__text-title <span>Коммерческий</span><br>директор
+									p.maxi-block__text-subtitle Хороший работник
+
+							.maxi-block.maxi-block-r2d2(style="display:none;")
+								.maxi-block__img
+									img(src="static/img/r2d2-big.png", alt="r2d2")
+								.maxi-block__text
+									h3.maxi-block__text-title <span>Коммерческий</span><br>директор
+									p.maxi-block__text-subtitle Хороший работник
+
+							.maxi-block.maxi-block-vader
 								.maxi-block__img
 									img(src="static/img/vader-big.png", alt="Вейдер")
-								//- .maxi-block__text
-								//- 	h3.maxi-block__text-title Генеральный директор
-								//- 	p.maxi-block__text-subtitle Владелец бизнеса
+								.maxi-block__text
+									h3.maxi-block__text-title <span>Генеральный</span><br>директор
+									p.maxi-block__text-subtitle Владелец бизнеса
 
 				.cource-info-wrapper
 					.cource-info
@@ -157,13 +188,122 @@ html(lang="ru-RU")
 				.container.container-test-1024.container-test-1440
 					h2.reasons__title 8 Причин пройти курс
 					.reasons-slider
-						p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
-						.reasons__img
-							img(src="static/img/borsh.jpg", alt="Борщ")
-						p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
-						h2.reasons__minus Минусы дорогих курсов:
-						p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
-						a.button.reasons-button Зарегистрироваться
+						.reasons-slider-tog
+
+							.reasons-slider-tog-block.tog-img1
+								.tog-block__img
+									img(src="static/img/tog-img1.jpg", alt="tog-img1.jpg")
+								button.tog-block__btn 1
+
+							.reasons-slider-tog-block.tog-img2
+								.tog-block__img
+									img(src="static/img/tog-img2.jpg", alt="tog-img1.jpg")
+								button.tog-block__btn 2
+
+							.reasons-slider-tog-block.tog-img3
+								.tog-block__img
+									img(src="static/img/tog-img3.jpg", alt="tog-img1.jpg")
+								button.tog-block__btn 3
+								
+							.reasons-slider-tog-block.tog-img4
+								.tog-block__img
+									img(src="static/img/tog-img4.jpg", alt="tog-img1.jpg")
+								button.tog-block__btn 4
+
+							.reasons-slider-tog-block.tog-img5
+								.tog-block__img
+									img(src="static/img/tog-img5.jpg", alt="tog-img1.jpg")
+								button.tog-block__btn 5
+
+							.reasons-slider-tog-block.tog-img6
+								.tog-block__img
+									img(src="static/img/tog-img6.jpg", alt="tog-img1.jpg")
+								button.tog-block__btn 6
+
+							.reasons-slider-tog-block.tog-img7
+								.tog-block__img
+									img(src="static/img/tog-img7.jpg", alt="tog-img1.jpg")
+								button.tog-block__btn 7
+
+							.reasons-slider-tog-block.tog-img8
+								.tog-block__img
+									img(src="static/img/tog-img8.jpg", alt="tog-img1.jpg")
+								button.tog-block__btn 8
+
+						.reasons-slider-wr
+
+							.reasons-slider-block.tog-big-img1
+								p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+								.reasons__img
+									img(src="static/img/borsh.jpg", alt="Борщ")
+								p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+								h2.reasons__minus Минусы дорогих курсов:
+								p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+								a.button.reasons-button Зарегистрироваться
+
+							.reasons-slider-block.tog-big-img2(style="display:none;")
+								p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+								.reasons__img
+									img(src="static/img/tog-big-img2.jpg", alt="Борщ")
+								p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+								h2.reasons__minus Минусы дорогих курсов:
+								p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+								a.button.reasons-button Зарегистрироваться
+
+							.reasons-slider-block.tog-big-img3(style="display:none;")
+								p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+								.reasons__img
+									img(src="static/img/tog-big-img3.jpg", alt="Борщ")
+								p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+								h2.reasons__minus Минусы дорогих курсов:
+								p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+								a.button.reasons-button Зарегистрироваться
+
+							.reasons-slider-block.tog-big-img4(style="display:none;")
+								p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+								.reasons__img
+									img(src="static/img/tog-big-img4.jpg", alt="Борщ")
+								p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+								h2.reasons__minus Минусы дорогих курсов:
+								p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+								a.button.reasons-button Зарегистрироваться
+
+							.reasons-slider-block.tog-big-img5(style="display:none;")
+								p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+								.reasons__img
+									img(src="static/img/tog-big-img5.jpg", alt="Борщ")
+								p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+								h2.reasons__minus Минусы дорогих курсов:
+								p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+								a.button.reasons-button Зарегистрироваться
+
+							.reasons-slider-block.tog-big-img6(style="display:none;")
+								p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+								.reasons__img
+									img(src="static/img/tog-big-img6.jpg", alt="Борщ")
+								p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+								h2.reasons__minus Минусы дорогих курсов:
+								p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+								a.button.reasons-button Зарегистрироваться
+
+							.reasons-slider-block.tog-big-img7(style="display:none;")
+								p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+								.reasons__img
+									img(src="static/img/tog-big-img7.jpg", alt="Борщ")
+								p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+								h2.reasons__minus Минусы дорогих курсов:
+								p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+								a.button.reasons-button Зарегистрироваться
+
+							.reasons-slider-block.tog-big-img8(style="display:none;")
+								p.reasons__subtitle Вы читали книги и статьи, учились на курсах, но в голове – борщ из обрывочных знаний
+								.reasons__img
+									img(src="static/img/tog-big-img8.jpg", alt="Борщ")
+								p.reasons__text Преподаватели — 100% практики. Не консультанты, не теоретики, не инфобизнесмены. Рассказываем о том, что делаем в проектах для наших клиентов. Теория подкрепляется реальными российскими кейсами, а не абстрактными Apple и Coca-Cola.
+								h2.reasons__minus Минусы дорогих курсов:
+								p.reasons__minus-text Программа основана на инструментах, а не на классическом маркетинге и целях бизнеса.
+								a.button.reasons-button Зарегистрироваться
+
 					.pages.reasons-pages
 						.pages__pre предыдущий
 						.pages__num 1
@@ -178,33 +318,33 @@ html(lang="ru-RU")
 
 			// --------------teachers--------------
 			section.teachers
-				.container.company-container
-					.company
-						h3.company__title У нас учились специалисты из этих компаний:
-						.company__img
-							.company__img-block
-								img(src="/static/img/dassault.png", alt="dassault")
-							.company__img-block
-								img(src="/static/img/gasprom01.png", alt="Газпром")
-						.pages
-							.pages__pre предыдущий
-							.pages__num 1
-							.pages__num-from /8
-							.pages__next следующий
+				.container.container-test-1024.company-container
+					//- .company
+					//- 	h3.company__title У нас учились специалисты из этих компаний:
+					//- 	.company__img
+					//- 		.company__img-block
+					//- 			img(src="/static/img/dassault.png", alt="dassault")
+					//- 		.company__img-block
+					//- 			img(src="/static/img/gasprom01.png", alt="Газпром")
+					//- 	.pages
+					//- 		.pages__pre предыдущий
+					//- 		.pages__num 1
+					//- 		.pages__num-from /8
+					//- 		.pages__next следующий
 					h2.teachers__title Преподаватели
+					.teachers-slider__mini-images
+						.mini-image01
+							img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
+						.mini-image01
+							img(src="static/img/avatar-vladimir-davydov3.png", alt="Андрей Гавриков")
+						.mini-image01
+							img(src="static/img/avatar-mikhael-fedorov3.png", alt="Андрей Гавриков")
+						.mini-image01
+							img(src="static/img/dmitry-fedorov3.png", alt="Андрей Гавриков")
+						.mini-image01
+							img(src="static/img/dmitry-fedorov3.png", alt="Андрей Гавриков")
 					.teachers-slider
-						.teachers-slider__mini-images
-							.mini-image01
-								img(src="static/img/avatar-andrey-gavrikov2.png", alt="Андрей Гавриков")
-							.mini-image01
-								img(src="static/img/avatar-vladimir-davydov3.png", alt="Андрей Гавриков")
-							.mini-image01
-								img(src="static/img/avatar-mikhael-fedorov3.png", alt="Андрей Гавриков")
-							.mini-image01
-								img(src="static/img/dmitry-fedorov3.png", alt="Андрей Гавриков")
-							.mini-image01
-								img(src="static/img/dmitry-fedorov3.png", alt="Андрей Гавриков")
-						#slider01.teachers-slider__full-info
+						.teachers-slider__full-info
 							.full-info01
 								.full-info01__img
 									img(src="static/img/mixail-fedorov-big.png", alt="Михаил Фёдоров")
@@ -217,51 +357,51 @@ html(lang="ru-RU")
 									p.full-info01__competence-text Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)
 									p.full-info01__competence-text Классический маркетинг
 									p.full-info01__competence-text Построение отчетности с помощью сквозной аналитики для управления бизнесом
-								.cooperated
-									h3.cooperated__title Сотрундничал
-									.cooperated__logo-wr
-										.cooperated__logo-img
-											img(src="/static/img/gasprom01.png", alt="ГазПром")
-										.cooperated__logo-img
-											img(src="/static/img/gasprom01.png", alt="ГазПром")
-							.full-info01
-								.full-info01__img
-									img(src="static/img/mixail-fedorov-big.png", alt="Михаил Фёдоров")
-								h3.full-info01__name Михаил Федоров
-								p.full-info01__text Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
-								h3.full-info01__title Ключевые компетенци
-								.full-info01__competence
-									p.full-info01__competence-text SEO-архитектор: планирование, прогнозирование и реализация стратегий SEO и SEM
-									p.full-info01__competence-text Поисковая и контекстная реклама
-									p.full-info01__competence-text Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)
-									p.full-info01__competence-text Классический маркетинг
-									p.full-info01__competence-text Построение отчетности с помощью сквозной аналитики для управления бизнесом
-								.cooperated
-									h3.cooperated__title Сотрундничал
-									.cooperated__logo-wr
-										.cooperated__logo-img
-											img(src="/static/img/gasprom01.png", alt="ГазПром")
-										.cooperated__logo-img
-											img(src="/static/img/gasprom01.png", alt="ГазПром")
-							.full-info01
-								.full-info01__img
-									img(src="static/img/mixail-fedorov-big.png", alt="Михаил Фёдоров")
-								h3.full-info01__name Михаил Федоров
-								p.full-info01__text Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
-								h3.full-info01__title Ключевые компетенци
-								.full-info01__competence
-									p.full-info01__competence-text SEO-архитектор: планирование, прогнозирование и реализация стратегий SEO и SEM
-									p.full-info01__competence-text Поисковая и контекстная реклама
-									p.full-info01__competence-text Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)
-									p.full-info01__competence-text Классический маркетинг
-									p.full-info01__competence-text Построение отчетности с помощью сквозной аналитики для управления бизнесом
-								.cooperated
-									h3.cooperated__title Сотрундничал
-									.cooperated__logo-wr
-										.cooperated__logo-img
-											img(src="/static/img/gasprom01.png", alt="ГазПром")
-										.cooperated__logo-img
-											img(src="/static/img/gasprom01.png", alt="ГазПром")
+								//- .cooperated
+								//- 	h3.cooperated__title Сотрундничал
+								//- 	.cooperated__logo-wr
+								//- 		.cooperated__logo-img
+								//- 			img(src="/static/img/gasprom01.png", alt="ГазПром")
+								//- 		.cooperated__logo-img
+								//- 			img(src="/static/img/gasprom01.png", alt="ГазПром")
+							//- .full-info01
+							//- 	.full-info01__img
+							//- 		img(src="static/img/mixail-fedorov-big.png", alt="Михаил Фёдоров")
+							//- 	h3.full-info01__name Михаил Федоров
+							//- 	p.full-info01__text Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
+							//- 	h3.full-info01__title Ключевые компетенци
+							//- 	.full-info01__competence
+							//- 		p.full-info01__competence-text SEO-архитектор: планирование, прогнозирование и реализация стратегий SEO и SEM
+							//- 		p.full-info01__competence-text Поисковая и контекстная реклама
+							//- 		p.full-info01__competence-text Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)
+							//- 		p.full-info01__competence-text Классический маркетинг
+							//- 		p.full-info01__competence-text Построение отчетности с помощью сквозной аналитики для управления бизнесом
+							//- 	.cooperated
+							//- 		h3.cooperated__title Сотрундничал
+							//- 		.cooperated__logo-wr
+							//- 			.cooperated__logo-img
+							//- 				img(src="/static/img/gasprom01.png", alt="ГазПром")
+							//- 			.cooperated__logo-img
+							//- 				img(src="/static/img/gasprom01.png", alt="ГазПром")
+							//- .full-info01
+							//- 	.full-info01__img
+							//- 		img(src="static/img/mixail-fedorov-big.png", alt="Михаил Фёдоров")
+							//- 	h3.full-info01__name Михаил Федоров
+							//- 	p.full-info01__text Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
+							//- 	h3.full-info01__title Ключевые компетенци
+							//- 	.full-info01__competence
+							//- 		p.full-info01__competence-text SEO-архитектор: планирование, прогнозирование и реализация стратегий SEO и SEM
+							//- 		p.full-info01__competence-text Поисковая и контекстная реклама
+							//- 		p.full-info01__competence-text Веб и бизнес-аналитика, их интеграция с хранилищами данных и внешними системами (CRM, телефония, сайт, складские системыи системы учета)
+							//- 		p.full-info01__competence-text Классический маркетинг
+							//- 		p.full-info01__competence-text Построение отчетности с помощью сквозной аналитики для управления бизнесом
+							//- 	.cooperated
+							//- 		h3.cooperated__title Сотрундничал
+							//- 		.cooperated__logo-wr
+							//- 			.cooperated__logo-img
+							//- 				img(src="/static/img/gasprom01.png", alt="ГазПром")
+							//- 			.cooperated__logo-img
+							//- 				img(src="/static/img/gasprom01.png", alt="ГазПром")
 
 			// --------------training-packages-----
 			section.training
@@ -671,7 +811,8 @@ html(lang="ru-RU")
 									input.registration__checkbox-input(type="checkbox")
 									span.registration__checkbox-input-checkbox
 
-			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 			script(src="static/js/libs.min.js")
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 			script(src="static/js/main.js")
 			<script>AOS.init({duration: 600});</script>

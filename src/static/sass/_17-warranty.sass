@@ -36,7 +36,182 @@
 		display: flex
 		flex-direction: column
 		margin: 0 0 50px 0
+		@media (min-width: 1024px)
+			position: relative
+			margin-left: 290px
+			margin-bottom: 80px
+		@media (min-width: 1440px)
+			margin-bottom: 100px
+			&:nth-child(1)
+				margin-left: 140px
+			&:nth-child(3)
+				margin-left: 420px
 	&__img
+		position: relative
+		width: 160px
+		height: 160px
+		@media (min-width: 1024px)
+			position: absolute
+			top: 0
+			left: -290px
+		&-t // Анимированная тройка
+			position: absolute
+			top: 0
+			left: 0
+			width: 105px
+			height: 105px
+			background: url(../img/big3.png) center no-repeat
+			background-size: contain
+			animation-name: levitation
+			animation-duration: 2s
+			animation-iteration-count: infinite
+			animation-direction: alternate
+			animation-timing-function: linear
+			@media (min-width: 1024px)
+				width: 250px
+				height: 250px
+		&-f // Анимированная четвёрка
+			position: absolute
+			top: 0
+			left: 0
+			width: 105px
+			height: 97px
+			background: url(../img/big4.png) center no-repeat
+			background-size: cover
+			animation-name: levitation
+			animation-duration: 2s
+			animation-iteration-count: infinite
+			animation-direction: alternate
+			animation-timing-function: linear
+			@media (min-width: 1024px)
+				width: 250px
+				height: 250px
+		&-ten // Анимированная десятка
+			position: absolute
+			top: 0
+			left: 0
+			width: 105px
+			height: 100px
+			background: url(../img/big10.png) center no-repeat
+			background-size: cover
+			animation-name: levitation
+			animation-duration: 2s
+			animation-iteration-count: infinite
+			animation-direction: alternate
+			animation-timing-function: linear
+			@media (min-width: 1024px)
+				width: 250px
+				height: 250px
+			&-fog
+				position: absolute
+				bottom: 25px
+				left: 45px
+				border-radius: 100%
+				background-color: #eee
+				box-shadow: 0 0 5px #eee, 0 0 10px #eee, 0 0 15px #eee, 0 0 50px #eee
+				animation-name: levitation-fog
+				animation-duration: 2s
+				animation-iteration-count: infinite
+				animation-direction: alternate
+				animation-timing-function: linear
+				@media (min-width: 1024px)
+					display: none
+				@media (min-width: 1440px)
+					display: block
+					bottom: -135px
+					left: 120px
+			&-fog1
+				position: absolute
+				bottom: 20px
+				left: 10px
+				width: 50px
+				height: 5px
+				border-radius: 100%
+				background-color: #eee
+				box-shadow: 0 0 5px #eee, 0 0 10px #eee, 0 0 15px #eee, 0 0 50px #eee
+				animation-name: levitation-1
+				animation-duration: 2s
+				animation-iteration-count: infinite
+				animation-direction: alternate
+				animation-timing-function: linear
+				@media (min-width: 1024px)
+					display: none
+				@media (min-width: 1440px)
+					display: block
+					bottom: -145px
+					left: 10px
+			&-fog0
+				position: absolute
+				bottom: 30px
+				left: 60px
+				width: 50px
+				height: 5px
+				border-radius: 100%
+				background-color: #eee
+				box-shadow: 0 0 5px #eee, 0 0 10px #eee, 0 0 15px #eee, 0 0 50px #eee
+				animation-name: levitation-0
+				animation-duration: 2s
+				animation-iteration-count: infinite
+				animation-direction: alternate
+				animation-timing-function: linear
+				@media (min-width: 1024px)
+					display: none
+				@media (min-width: 1440px)
+					display: block
+					bottom: -135px
+					left: 150px
+
+@keyframes levitation
+	from
+		top: 0
+	to
+		top: 10px
+@keyframes levitation-fog
+	from
+		width: 40px
+		height: 5px
+	to
+		width: 50px
+		height: 8px
+@keyframes levitation-1
+	from
+		width: 40px
+		height: 5px
+	to
+		width: 50px
+		height: 8px
+@keyframes levitation-0
+	from
+		width: 40px
+		height: 5px
+	to
+		width: 50px
+		height: 8px
+
+@media (min-width: 1440px)
+	@keyframes levitation-fog
+		from
+			width: 100px
+			height: 10px
+		to
+			width: 110px
+			height: 15px
+	@keyframes levitation-1
+		from
+			width: 100px
+			height: 5px
+		to
+			width: 110px
+			height: 8px
+	@keyframes levitation-0
+		from
+			width: 100px
+			height: 5px
+		to
+			width: 110px
+			height: 8px
+
+.profit
 	&__title
 		font-family: Museo Sans Cyrl, sans-serif
 		font-size: 24px
@@ -44,6 +219,10 @@
 		letter-spacing: 0.02em
 		color: #343235
 		margin: 0 0 18px
+		@media (min-width: 1024px)
+			font-size: 40px
+			line-height: 48px
+			width: 530px
 		& span
 			color: #96CB4F
 	&__text
@@ -52,3 +231,7 @@
 		line-height: 32px
 		letter-spacing: 0.02em
 		color: #343235
+		@media (min-width: 1024px)
+			font-size: 18px
+			line-height: 40px
+			width: 586px

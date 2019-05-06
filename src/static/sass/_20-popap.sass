@@ -1,0 +1,160 @@
+.popap
+	min-height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: #333
+	&__title
+		font-family: Bebas Neue, sans-serif
+		font-style: normal
+		font-weight: normal
+		font-size: 40px
+		line-height: 44px
+		letter-spacing: 4px
+		color: #343235
+		@media (min-width: 756px)
+			font-size: 64px
+			line-height: 72px
+			padding-top: 53px
+			margin-bottom: 13px
+	&__subtitle
+		font-family: Museo Sans Cyrl,sans-serif
+		font-size: 24px
+		line-height: 40px
+		letter-spacing: 0.02em
+		color: #343235
+		padding-top: 58px
+		margin-bottom: 5px
+	&__text
+		font-family: Museo Sans Cyrl
+		font-size: 20px
+		line-height: 40px
+		letter-spacing: 0.02em
+		color: #8B8B8B
+		margin-bottom: 40px
+
+.button-popap
+	width: 250px
+	@media (min-width: 450px)
+		width: 350px
+
+.modul
+	&-popap
+		width: 95vw
+		max-width: 1070px
+		background-color: #fff
+		border-radius: 24px
+		overflow: hidden
+		&__content
+			position: relative
+			display: flex
+			padding: 20px
+			width: calc(100% - 40px)
+			height: calc(100% - 40px)
+		&__close
+			position: absolute
+			top: 30px
+			right: 30px
+			width: 36px
+			height: 36px
+			background: url(../img/popap-close.png)
+			background-position: 0 0
+			@media (min-width: 1024px)
+				top: 45px
+				right: 60px
+				cursor: pointer
+				transition: 0.5s
+				&:hover
+					background-position: 36px 0
+		&__img
+			display: none
+			@media (min-width: 1024px)
+				display: flex
+				width: 46.6%
+				margin-block-end: -20px
+				margin-left: -20px
+		&__img-big
+			@media (min-width: 1024px)
+				width: 70%
+		&__descr
+			display: flex
+			flex-direction: column
+			@media (min-width: 1024px)
+				margin-top: 35px
+				width: 53.4%
+		&__descr-big
+			@media (min-width: 1024px)
+				width: 53.4%
+		&__controls
+			display: flex
+			margin-bottom: 20px
+			margin-left: 40px
+			@media (min-width: 1024px)
+				margin-bottom: 41px
+				margin-left: 0px
+		&__control
+			font-family: Museo Sans Cyrl, sans-serif
+			font-size: 14px
+			line-height: 17px
+			letter-spacing: 4px
+			text-transform: uppercase
+			color: #8B8B8B
+			margin-right: 40px
+			@media (min-width: 1024px)
+				cursor: pointer
+			&-active
+				text-decoration-line: underline
+				color: #343235
+		&__title
+			font-family: SignPainter, sans-serif
+			font-size: 40px
+			line-height: 39px
+			color: #343235
+			margin-bottom: 20px
+			& span
+				color: #F03A2B
+			@media (min-width: 1024px)
+				margin-bottom: 14px
+		&__text
+			font-family: Museo Sans Cyrl, sans-serif
+			font-size: 20px
+			line-height: 26px
+			color: #343235
+			margin-bottom: 20px
+			@media (min-width: 1024px)
+				line-height: 32px
+				letter-spacing: 0.02em
+				margin-bottom: 43px
+		&__learn // Пункты Узнать и Научиться
+			margin-bottom: 20px
+.learn__title
+	font-family: Bebas Neue, sans-serif
+	font-style: normal
+	font-weight: bold
+	font-size: 24px
+	line-height: 24px
+	letter-spacing: 2px
+	color: #343235
+	margin-bottom: 16px
+	@media (min-width: 1024px)
+		margin-bottom: 26px
+.learn__text
+	position: relative
+	font-family: Museo Sans Cyrl, sans-serif
+	font-size: 16px
+	line-height: 20px
+	letter-spacing: 0.02em
+	color: #8B8B8B
+	margin-left: 40px
+	margin-bottom: 16px
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: -40px
+		width: 24px
+		height: 24px
+		background: url(../img/learn.png) center no-repeat
+	&-edu:before
+		background: url(../img/edu.png) center no-repeat
+

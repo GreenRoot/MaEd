@@ -35,8 +35,21 @@
 
 .button-popap
 	width: 250px
+	padding-left: 60px
+	&:before
+		background-image: url(../img/btn-back.png)
+		top: 31px
+		left: 24px
+		width: 26px
+		height: 20px
+	&:hover:before
+		background-image: url(../img/btn-back.png)
+		background-position: 26px 0
 	@media (min-width: 450px)
 		width: 350px
+		padding-left: 80px
+		&:before
+			left: 36px
 
 .modul
 	&-popap
@@ -45,6 +58,8 @@
 		background-color: #fff
 		border-radius: 24px
 		overflow: hidden
+		&-big
+			overflow: visible
 		&__content
 			position: relative
 			display: flex
@@ -76,6 +91,9 @@
 		&__img-big
 			@media (min-width: 1024px)
 				width: 70%
+		&__img-big img
+			margin-top: -70px
+			margin-left: -165px
 		&__descr
 			display: flex
 			flex-direction: column

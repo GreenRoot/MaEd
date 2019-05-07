@@ -7,6 +7,7 @@ html(lang="ru-RU")
 		link(rel="stylesheet", href="static/css/slick.css")
 		link(rel="stylesheet", href="static/css/slick-theme.css")
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 		link(rel="stylesheet", href="static/css/main.css?v.0.0.27")
 		title MaEd
 	body
@@ -75,8 +76,8 @@ html(lang="ru-RU")
 							h3.features__title Практика во&nbsp; время&nbsp;обучения
 							p.features__text Вы сегментируете целевую аудиторию, проведете конкурентный анализ, подберете поисковые запросы, составите требования для контекстной рекламы, разработаете стратегию контент-маркетинга, email-маркетинга и т.д.
 						.features__block
-							//- svg(viewBox="0 0 357 282")
-							//- 	path.features__path(d="M 5.9145288,58.515306 5.0695961,227.07938 c 5.4407869,17.5855 14.3047369,32.61569 33.7973069,39.71183 41.046703,4.81365 82.832767,7.59405 125.472507,8.02686 52.245,-0.66921 104.49001,-1.68287 156.73501,-5.49206 16.9126,-8.88487 26.34591,-22.37239 32.95237,-37.5995 L 354.87173,56.402974 C 352.34708,43.528982 350.67052,30.555216 335.01581,19.225937 315.47858,10.933781 293.8333,7.2860945 270.02847,6.923159 L 201.09398,5.2845473 139.83636,4.862081 68.862013,9.0867444 C 56.142153,10.64221 44.213798,9.7647826 31.262509,15.001273 14.781699,22.983936 6.6511246,39.5724 5.9145288,58.515306 Z")
+							svg(id="points" width="576" height="379" viewBox="0 0 576 379" fill="none" xmlns="http://www.w3.org/2000/svg")
+								path(id='path-id' d="M292.108 0.289893L300.325 0.869666L300.255 1.86719L308.471 2.44696L308.542 1.44944L316.758 2.02921L316.688 3.02673L324.904 3.60651L324.975 2.60899L333.191 3.18876L333.121 4.18628L341.337 4.76605L341.408 3.76853L349.624 4.34831L349.554 5.34583L357.771 5.9256L357.841 4.92808L366.057 5.50786L365.987 6.50538L374.204 7.08515L374.274 6.08763L382.491 6.6674L382.42 7.66492L390.637 8.2447L390.707 7.24718L398.924 7.82695L398.853 8.82447L407.07 9.40424L407.14 8.40672L415.357 8.9865L415.287 9.98402L423.503 10.5638L423.573 9.56627L431.79 10.146L431.72 11.1436L439.936 11.7233L440.007 10.7258L448.223 11.3056L448.153 12.3031L456.369 12.8829L456.44 11.8854L464.656 12.4651L464.586 13.4627L472.803 14.0424L472.873 13.0449L481.089 13.6247L481.019 14.6222L489.236 15.202L489.306 14.2045L497.523 14.7842L497.452 15.7818L501.561 16.0716C502.799 16.159 504.029 16.2746 505.25 16.4177L505.366 15.4246C507.872 15.7183 510.341 16.1267 512.767 16.6442L512.558 17.6222C514.991 18.141 517.38 18.7707 519.72 19.5058L520.02 18.5518C522.419 19.3052 524.768 20.1679 527.061 21.1338L526.673 22.0554C528.958 23.018 531.187 24.0844 533.354 25.2487L533.827 24.3677C536.037 25.5547 538.183 26.842 540.26 28.2233L539.706 29.056C541.766 30.4262 543.757 31.8903 545.674 33.4418L546.303 32.6646C548.248 34.2397 550.118 35.9039 551.905 37.6507L551.206 38.3658C552.972 40.0923 554.658 41.9006 556.255 43.7842L557.018 43.1373C558.635 45.0429 560.163 47.0248 561.598 49.0764L560.778 49.6494C562.191 51.6702 563.511 53.7595 564.733 55.911L565.602 55.4172C566.834 57.5861 567.967 59.8175 568.996 62.105L568.084 62.5151C569.092 64.7589 569.999 67.0574 570.799 69.4046L571.745 69.0822C572.547 71.4376 573.243 73.8413 573.825 76.2874L572.853 76.5192C573.421 78.9058 573.881 81.3333 574.227 83.7961L575.218 83.6568C575.563 86.1135 575.797 88.6047 575.913 91.125L574.914 91.1712C574.971 92.3992 575 93.6343 575 94.8757V98.8183H576V106.704H575V114.589H576V122.474H575V130.36H576V138.245H575V146.131H576V154.016H575V161.901H576V169.787H575V177.672H576V185.557H575V193.443H576V201.328H575V209.213H576V217.099H575V224.984H576V232.869H575V240.755H576V248.64H575V256.526H576V264.411H575V272.296H576V280.182H575V284.124C575 285.366 574.971 286.601 574.914 287.829L575.913 287.875C575.797 290.395 575.563 292.887 575.218 295.343L574.227 295.204C573.881 297.667 573.421 300.094 572.853 302.481L573.825 302.713C573.243 305.159 572.547 307.562 571.745 309.918L570.799 309.595C569.999 311.943 569.092 314.241 568.084 316.485L568.996 316.895C567.967 319.183 566.834 321.414 565.602 323.583L564.733 323.089C563.511 325.241 562.191 327.33 560.778 329.351L561.598 329.924C560.163 331.975 558.635 333.957 557.018 335.863L556.255 335.216C554.658 337.099 552.972 338.908 551.206 340.634L551.905 341.349C550.118 343.096 548.248 344.76 546.303 346.335L545.674 345.558C543.757 347.11 541.766 348.574 539.706 349.944L540.26 350.777C538.183 352.158 536.037 353.445 533.827 354.632L533.354 353.751C531.187 354.916 528.958 355.982 526.673 356.945L527.061 357.866C524.768 358.832 522.419 359.695 520.02 360.448L519.72 359.494C517.38 360.229 514.991 360.859 512.558 361.378L512.767 362.356C510.341 362.873 507.872 363.282 505.366 363.575L505.25 362.582C504.029 362.725 502.799 362.841 501.561 362.928L497.452 363.218L497.523 364.216L489.306 364.796L489.236 363.798L481.019 364.378L481.089 365.375L472.873 365.955L472.802 364.958L464.586 365.537L464.656 366.535L456.44 367.115L456.369 366.117L448.153 366.697L448.223 367.694L440.007 368.274L439.936 367.277L431.72 367.856L431.79 368.854L423.573 369.434L423.503 368.436L415.286 369.016L415.357 370.013L407.14 370.593L407.07 369.596L398.853 370.176L398.924 371.173L390.707 371.753L390.637 370.755L382.42 371.335L382.491 372.333L374.274 372.912L374.204 371.915L365.987 372.495L366.057 373.492L357.841 374.072L357.77 373.074L349.554 373.654L349.624 374.652L341.408 375.231L341.337 374.234L333.121 374.814L333.191 375.811L324.975 376.391L324.904 375.393L316.688 375.973L316.758 376.971L308.541 377.551L308.471 376.553L300.254 377.133L300.325 378.13L292.108 378.71L292.038 377.713L288 377.997L283.962 377.713L283.892 378.71L275.675 378.13L275.746 377.133L267.529 376.553L267.459 377.551L259.242 376.971L259.312 375.973L251.096 375.393L251.025 376.391L242.809 375.811L242.879 374.814L234.663 374.234L234.592 375.231L226.376 374.652L226.446 373.654L218.23 373.074L218.159 374.072L209.943 373.492L210.013 372.495L201.796 371.915L201.726 372.912L193.509 372.333L193.58 371.335L185.363 370.755L185.293 371.753L177.076 371.173L177.147 370.176L168.93 369.596L168.86 370.593L160.643 370.013L160.713 369.016L152.497 368.436L152.427 369.434L144.21 368.854L144.28 367.856L136.064 367.277L135.993 368.274L127.777 367.694L127.847 366.697L119.631 366.117L119.56 367.115L111.344 366.535L111.414 365.537L103.197 364.958L103.127 365.955L94.9105 365.375L94.9809 364.378L86.7643 363.798L86.6939 364.796L78.4773 364.216L78.5477 363.218L74.4395 362.928C73.2011 362.841 71.9711 362.725 70.7502 362.582L70.6337 363.575C68.1279 363.282 65.6593 362.873 63.2331 362.356L63.4417 361.378C61.0094 360.859 58.6203 360.229 56.2796 359.494L55.98 360.448C53.5809 359.695 51.2321 358.832 48.939 357.866L49.3272 356.945C47.0422 355.982 44.8132 354.916 42.6459 353.751L42.1727 354.632C39.9632 353.445 37.8171 352.158 35.7402 350.777L36.294 349.944C34.2339 348.574 32.2427 347.11 30.3264 345.558L29.6971 346.335C27.7515 344.76 25.8822 343.096 24.095 341.349L24.794 340.634C23.0275 338.908 21.3424 337.099 19.7445 335.216L18.9819 335.863C17.3653 333.957 15.8368 331.975 14.4025 329.924L15.2221 329.351C13.8093 327.33 12.4891 325.241 11.2672 323.089L10.3976 323.583C9.16589 321.414 8.03285 319.183 7.00438 316.895L7.91644 316.485C6.90763 314.241 6.00072 311.943 5.20136 309.595L4.25476 309.918C3.4526 307.562 2.75739 305.159 2.17468 302.713L3.14746 302.481C2.57895 300.094 2.11888 297.667 1.7726 295.204L0.782339 295.343C0.436914 292.887 0.2033 290.395 0.0866418 287.875L1.08557 287.829C1.02873 286.601 1 285.366 1 284.124V280.182H0V272.296H1V264.411H0V256.526H1V248.64H0V240.755H1V232.87H0V224.984H1V217.099H0V209.213H1V201.328H0V193.443H1V185.557H0V177.672H1V169.787H0V161.901H1V154.016H0V146.131H1V138.245H0V130.36H1V122.474H0V114.589H1V106.704H0V98.8184H1V94.8757C1 93.6343 1.02873 92.3992 1.08557 91.1712L0.0866414 91.125C0.203299 88.6047 0.436914 86.1135 0.78234 83.6568L1.7726 83.7961C2.11888 81.3333 2.57895 78.9058 3.14746 76.5192L2.17468 76.2875C2.75739 73.8413 3.45261 71.4376 4.25476 69.0822L5.20137 69.4046C6.00073 67.0575 6.90764 64.7589 7.91644 62.5151L7.00438 62.1051C8.03286 59.8175 9.1659 57.5861 10.3977 55.4172L11.2672 55.911C12.4891 53.7595 13.8093 51.6702 15.2221 49.6494L14.4025 49.0765C15.8368 47.0248 17.3653 45.043 18.9819 43.1373L19.7445 43.7842C21.3424 41.9006 23.0276 40.0923 24.794 38.3658L24.095 37.6507C25.8822 35.9039 27.7516 34.2397 29.6971 32.6646L30.3264 33.4418C32.2427 31.8903 34.2339 30.4262 36.2941 29.056L35.7402 28.2233C37.8171 26.842 39.9632 25.5547 42.1727 24.3678L42.6459 25.2487C44.8132 24.0844 47.0422 23.018 49.3272 22.0554L48.939 21.1338C51.2321 20.1679 53.5809 19.3052 55.98 18.5518L56.2796 19.5058C58.6203 18.7707 61.0094 18.141 63.4417 17.6222L63.2331 16.6442C65.6593 16.1267 68.1279 15.7183 70.6337 15.4245L70.7502 16.4177C71.9711 16.2746 73.2011 16.159 74.4395 16.0716L78.5478 15.7817L78.4774 14.7842L86.694 14.2045L86.7644 15.202L94.981 14.6222L94.9106 13.6247L103.127 13.0449L103.198 14.0424L111.414 13.4627L111.344 12.4651L119.56 11.8854L119.631 12.8829L127.847 12.3031L127.777 11.3056L135.993 10.7258L136.064 11.7233L144.28 11.1436L144.21 10.146L152.427 9.56627L152.497 10.5638L160.714 9.98401L160.643 8.98649L168.86 8.40672L168.93 9.40424L177.147 8.82447L177.076 7.82695L185.293 7.24717L185.363 8.24469L193.58 7.66492L193.509 6.6674L201.726 6.08763L201.796 7.08514L210.013 6.50537L209.943 5.50785L218.159 4.92808L218.23 5.9256L226.446 5.34582L226.376 4.3483L234.592 3.76853L234.663 4.76605L242.879 4.18628L242.809 3.18876L251.025 2.60898L251.096 3.6065L259.312 3.02673L259.242 2.02921L267.459 1.44943L267.529 2.44695L275.746 1.86718L275.675 0.869661L283.892 0.289887L283.962 1.28741L288 1.00249L292.038 1.28741L292.108 0.289893Z" stroke="#2F2F2F" stroke-width="2" stroke-dasharray="8 8")
 							h3.features__title-custom Кастомизируем
 							p.features__text-custom программу под задачи вашей организации и обучим сотрудников
 					img.feature-foot(src="static/img/features-foot.png", alt="foot")
@@ -500,25 +501,73 @@ html(lang="ru-RU")
 					h2.comments__title Отзывы участников программы
 					.comments-wr
 						.comments__youtube
-							.youtube-slider
-								.youtube-slider__block
-									img(src="static/img/youtube01.png", alt="video")
-								.youtube-slider__block
-									img(src="static/img/youtube01.png", alt="video")
-								.youtube-slider__block
-									img(src="static/img/youtube01.png", alt="video")
-						.comments__comment
-							.student-wr
-								img.student-img(src="static/img/avatar-dmitry-topolya-mini.png", alt="Дмитрий Тополя")
-								.student-name-and-stram
-									h3.student-name <span>Д</span>итрий Тополя
-									p.student-stream 15 поток
-							p.comment-wr Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
-						.pages.comments-pages
-							.pages__pre предыдущий
-							.pages__num 1
-							.pages__num-from /3
-							.pages__next следующий
+							.comments__comment
+								.student-wr
+									img.student-img(src="static/img/avatar-dmitry-topolya-mini.png", alt="Дмитрий Тополя")
+									.student-name-and-stram
+										h3.student-name <span>Д</span>итрий Тополя
+										p.student-stream 15 поток
+								p.comment-wr Совладелец и технический директор маркетинговой группы «Комплето». Аккредитованный преподаватель Нидерландского Института Маркетинга, Академии интернет-маркетинга «Ашманов и партнеры», Нетологии, CyberMarketing. Спикер на ключевых конференциях по поисковой оптимизации и веб-аналитике: iMetrics, Ашмановка и другие
+
+							.slaider-3d
+								section.nav.section_testimonials(data-anchor="review" id="review")
+									.container
+										.testimonial-block
+											.testimonials-wrap
+												a(data-fancybox data-review-count="1" class="testimonial-item testimonial-item__active" href="https://www.youtube.com/embed/9VgoDQ7UXG4")
+													img.icon-play(src="static/img/icon-play-testimonial.png", alt="")
+													img(src="static/img/review-thumb-1.png", alt="")
+												a(data-fancybox data-review-count="2" class="testimonial-item testimonial-item__second" href="https://www.youtube.com/embed/9VgoDQ7UXG4")
+													img.icon-play(src="static/img/icon-play-testimonial.png", alt="")
+													img(src="static/img/review-thumb-2.png", alt="")
+												a(data-fancybox data-review-count="3" class="testimonial-item testimonial-item__third" href="https://www.youtube.com/embed/9VgoDQ7UXG4")
+													img.icon-play(src="static/img/icon-play-testimonial.png", alt="")
+													img(src="static/img/review-thumb-3.png", alt="")
+												a(data-fancybox data-review-count="4" class="testimonial-item" href="https://www.youtube.com/embed/9VgoDQ7UXG4")
+													img.icon-play(src="static/img/icon-play-testimonial.png", alt="")
+													img(src="static/img/review-thumb-1.png", alt="")
+												a(data-fancybox data-review-count="5" class="testimonial-item" href="https://www.youtube.com/embed/9VgoDQ7UXG4")
+													img.icon-play(src="static/img/icon-play-testimonial.png", alt="")
+													img(src="static/img/review-thumb-2.png", alt="")
+												a(data-fancybox data-review-count="6" class="testimonial-item" href="https://www.youtube.com/embed/9VgoDQ7UXG4")
+													img.icon-play(src="static/img/icon-play-testimonial.png", alt="")
+													img(src="static/img/review-thumb-3.png", alt="")
+												a(data-fancybox data-review-count="7" class="testimonial-item" href="https://www.youtube.com/embed/9VgoDQ7UXG4")
+													img.icon-play(src="static/img/icon-play-testimonial.png", alt="")
+													img(src="static/img/review-thumb-1.png", alt="")
+												a(data-fancybox data-review-count="8" class="testimonial-item" href="https://www.youtube.com/embed/9VgoDQ7UXG4")
+													img.icon-play(src="static/img/icon-play-testimonial.png", alt="")
+													img(src="static/img/review-thumb-2.png", alt="")
+												a(data-fancybox data-review-count="9" class="testimonial-item" href="https://www.youtube.com/embed/9VgoDQ7UXG4")
+													img.icon-play(src="static/img/icon-play-testimonial.png", alt="")
+													img(src="static/img/review-thumb-3.png", alt="")
+												ul.testimonials-paggination
+													li
+														a.testimonials-paggination__prev.prev-end(href="javascript:void(0)")
+													li
+														a.testimonials-paggination__page.active(href="javascript:void(0)" data-testimonials-page="1")
+													li
+														a.testimonials-paggination__page(href="javascript:void(0)" data-testimonials-page="2")
+													li
+														a.testimonials-paggination__page(href="javascript:void(0)" data-testimonials-page="3")
+													li
+														a.testimonials-paggination__page(href="javascript:void(0)" data-testimonials-page="4")
+													li
+														a.testimonials-paggination__page(href="javascript:void(0)" data-testimonials-page="5")
+													li
+														a.testimonials-paggination__page(href="javascript:void(0)" data-testimonials-page="6")
+													li
+														a.testimonials-paggination__page(href="javascript:void(0)" data-testimonials-page="7")
+													li
+														a.testimonials-paggination__page(href="javascript:void(0)" data-testimonials-page="8")
+													li
+														a.testimonials-paggination__next(href="javascript:void(0)")
+
+									.pages.comments-pages
+										.pages__pre.testimonials-paggination__prev
+										.pages__num 1
+										.pages__num-from /9
+										.pages__next.testimonials-paggination__next
 
 			// --------------programm--------------
 			section.programm
@@ -826,3 +875,5 @@ html(lang="ru-RU")
 			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 			script(src="static/js/main.js")
 			<script>AOS.init({duration: 600});</script>
+			<script src="https://unpkg.com/imask"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script

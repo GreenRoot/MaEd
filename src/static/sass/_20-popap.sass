@@ -79,22 +79,71 @@
 
 
 .button-popap
-	width: 250px
-	padding-left: 60px
+	width: 270px
+	box-sizing: border-box
+	position: relative
+	display: inline-block
+	background-color: #006EC7
+	font-family: Bebas Neue, sans-serif
+	font-style: normal
+	font-weight: bold
+	font-size: 20px
+	line-height: 20px
+	text-align: center
+	letter-spacing: 2px
+	color: #FFFFFF
+	padding-top: 30px
+	padding-bottom: 30px
+	padding-left: 30px
+	border: 2px
+	border-radius: 16px
+	border: 2px solid #006EC7
+	cursor: pointer
 	&:before
+		content: ''
+		position: absolute
 		background-image: url(../img/btn-back.png)
 		top: 31px
-		left: 24px
+		left: 70px
 		width: 26px
 		height: 20px
-	&:hover:before
-		background-image: url(../img/btn-back.png)
+	@media (min-width: 475px)
+		width: 349px
+.button-popap:hover
+	color: #006EC7
+	background-color: #fff
+	&:before
 		background-position: 26px 0
-	@media (min-width: 450px)
-		width: 350px
-		padding-left: 80px
-		&:before
-			left: 36px
+.button-popap-pop
+	&:before
+		top: 25px
+		left: 80px
+		background-image: url(../img/btn-pop.png)
+		width: 28px
+		height: 28px
+.button-popap-pop:hover:before
+	background-position: 28px 0
+
+
+
+
+
+	// width: 250px
+	// padding-left: 60px
+	// &:before
+	// 	background-image: url(../img/btn-back.png)
+	// 	top: 31px
+	// 	left: 24px
+	// 	width: 26px
+	// 	height: 20px
+	// &:hover:before
+	// 	background-image: url(../img/btn-back.png)
+	// 	background-position: 26px 0
+	// @media (min-width: 450px)
+	// 	width: 350px
+	// 	padding-left: 80px
+	// 	&:before
+	// 		left: 36px
 
 .modul
 	&-popap
@@ -104,6 +153,9 @@
 		border-radius: 24px
 		overflow: hidden
 		&-big
+			background-image: url(../img/bg-lines-1.png), url(../img/bg-lines-2.png)
+			background-repeat: no-repeat, no-repeat
+			background-position: 50px 0, bottom right
 			overflow: visible
 		&__content
 			position: relative
@@ -123,7 +175,6 @@
 				top: 45px
 				right: 60px
 				cursor: pointer
-				transition: 0.5s
 				&:hover
 					background-position: 36px 0
 		&__img
@@ -205,11 +256,11 @@
 	position: relative
 	font-family: Museo Sans Cyrl, sans-serif
 	font-size: 16px
-	line-height: 20px
+	line-height: 23px
 	letter-spacing: 0.02em
 	color: #8B8B8B
 	margin-left: 40px
-	margin-bottom: 16px
+	margin-bottom: 17px
 	&:before
 		content: ''
 		position: absolute
@@ -221,3 +272,18 @@
 	&-edu:before
 		background: url(../img/edu.png) center no-repeat
 
+.sosial
+	display: flex
+	align-items: center
+	&__link
+		width: 64px
+		height: 64px
+		background: url(../img/vkontakte.png) center no-repeat
+		margin-right: 8px
+		margin-left: 8px
+		&-vk
+			background: url(../img/vkontakte.png) center no-repeat
+		&-fb
+			background: url(../img/facab.png) center no-repeat
+		&-instagramm
+			background: url(../img/instagram.png) center no-repeat

@@ -58,7 +58,8 @@
 			position: absolute
 			top: 30px
 			left: -32px
-			width: 270px
+			width: calc(100vw - 60px)
+			// width: 270px
 			padding: 22px 0 22px 32px
 			font-family: Museo Sans Cyrl, sans-serif
 			font-size: 16px
@@ -79,7 +80,7 @@
 
 
 .button-popap
-	width: 270px
+	width: calc(100vw - 60px)
 	box-sizing: border-box
 	position: relative
 	display: inline-block
@@ -104,11 +105,13 @@
 		position: absolute
 		background-image: url(../img/btn-back.png)
 		top: 31px
-		left: 70px
+		left: calc(50% - 100px)
 		width: 26px
 		height: 20px
 	@media (min-width: 475px)
 		width: 349px
+		&:before
+			left: 70px
 .button-popap:hover
 	color: #006EC7
 	background-color: #fff
@@ -117,10 +120,13 @@
 .button-popap-pop
 	&:before
 		top: 25px
-		left: 80px
+		left: calc(50% - 90px)
 		background-image: url(../img/btn-pop.png)
 		width: 28px
 		height: 28px
+		@media (min-width: 475px)
+			left: 80px
+
 .button-popap-pop:hover:before
 	background-position: 28px 0
 
@@ -227,7 +233,7 @@
 			margin-bottom: 20px
 			& span
 				color: #F03A2B
-			@media (min-width: 1024px)
+			@media (min-width: 1024px)                       
 				margin-bottom: 14px
 		&__text
 			font-family: Museo Sans Cyrl, sans-serif
